@@ -5,14 +5,14 @@ import NavBarList from "./NavBarList";
 export default function NavBar(props) {
   return (
     <React.Fragment>
-      <Drawer
-        variant="temporary"
-        anchor="left"
-        open={props.showNav}
-        onClose={props.closeNav}
-      >
-        <NavBarList />
-      </Drawer>
+        <Drawer
+          variant="temporary"
+          anchor="left"
+          open={props.showNav}
+          onClose={props.closeNav}
+        >
+          <NavBarList />
+        </Drawer>
     </React.Fragment>
   );
 }
