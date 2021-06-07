@@ -4,6 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Explore from "../components/Home/Explore"
 import ExploreContent from "../components/Home/ExploreContent";
 
+// Remember to fix padding (or margin? I forget) on this page to line up with the slide show
+
 export default function Home() {
   return (
     <div>

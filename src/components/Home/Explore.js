@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Explore.module.css";
 import ExploreCategories from "./ExploreCategories";
+import Divider from "@material-ui/core/Divider";
 
 export default function Explore() {
   return (
@@ -10,6 +11,7 @@ export default function Explore() {
         Explore
       </Typography>
       <ExploreCategories />
+      <Divider />
     </React.Fragment>
   );
 }

@@ -6,6 +6,8 @@ import Shows from "./pages/Shows";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/UI/Footer/Footer";
+import Divider from "@material-ui/core/Divider";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Redirect to="/blog" />
         </Route>
       </Switch>
+      <Divider style={{marginTop: "6vh"}} />
+      <Footer />
     </div>
   );
 }

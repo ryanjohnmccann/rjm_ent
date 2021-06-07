@@ -2,9 +2,10 @@
 .buttonGrid {
     padding-top: 1vh;
     padding-left: 2.3vw;
+    padding-bottom: 4vh;
 }
 
 .button {
-    width: 150px;
+    width: 120px;
     height: 35px;
 }

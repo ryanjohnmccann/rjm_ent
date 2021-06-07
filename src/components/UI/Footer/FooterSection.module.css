@@ -1,0 +1,17 @@
+.footerTitle {
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: large;
+  padding-bottom: 3vh;
+  margin-top: 1.5vh;
+}
+
+.links {
+  font-family: "Roboto";
+  padding-bottom: 1.4vh;
+}
+
+.link:hover {
+  transition: 0.3s;
+  color: gray;
+}

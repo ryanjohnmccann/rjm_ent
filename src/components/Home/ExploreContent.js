@@ -1,8 +1,15 @@
 import React from "react";
-import ContentCard1 from "../UI/ContentCard1";
+import ContentCard1 from "../UI/ContentCards/ContentCard1";
 import Image1 from "../../assets/Home/ExploreContent/ExploreContent1.jpg";
+import Image2 from "../../assets/Home/ExploreContent/ExploreContent2.jpg";
+import Image3 from "../../assets/Home/ExploreContent/ExploreContent3.jpg";
+import Image4 from "../../assets/Home/ExploreContent/ExploreContent4.jpg";
+import Image5 from "../../assets/Home/ExploreContent/ExploreContent5.jpg";
+import Image6 from "../../assets/Home/ExploreContent/ExploreContent6.jpg";
+import Image7 from "../../assets/Home/ExploreContent/ExploreContent7.jpg";
+import Image8 from "../../assets/Home/ExploreContent/ExploreContent8.jpg";
 import Grid from "@material-ui/core/Grid";
-import styles from "./ExploreContent.module.css"
+import styles from "./ExploreContent.module.css";
 
 export default function ExploreContent() {
   function createContentCard(
@@ -11,10 +18,22 @@ export default function ExploreContent() {
     title,
     categoryColor,
     category,
-    mainTitle,
-    body
+    body,
+    contentKey,
+    gridKey,
+    mainTitle = ""
   ) {
-    return { alt, image, title, categoryColor, category, mainTitle, body };
+    return {
+      alt,
+      image,
+      title,
+      categoryColor,
+      category,
+      body,
+      contentKey,
+      gridKey,
+      mainTitle,
+    };
   }
   const contentCards = [
     createContentCard(
@@ -23,70 +42,96 @@ export default function ExploreContent() {
       "Random Title",
       "secondary",
       "Shows",
-      "Random Show",
-      "Random body content."
+      "Random body content.",
+      "randomShowContentCard1",
+      "randomContentGridItem1",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image2,
       "Random Title",
-      "secondary",
-      "Shows",
-      "Random Show",
-      "Random body content."
+      "primary",
+      "Blog",
+      "Random body content.",
+      "randomShowContentCard2",
+      "randomContentGridItem2",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image3,
       "Random Title",
       "secondary",
       "Shows",
-      "Random Show",
-      "Random body content."
+      "Random body content.",
+      "randomShowContentCard3",
+      "randomContentGridItem3",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image4,
       "Random Title",
       "secondary",
       "Shows",
-      "Random Show",
-      "Random body content."
+      "Random body content.",
+      "randomShowContentCard4",
+      "randomContentGridItem4",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image5,
       "Random Title",
-      "secondary",
-      "Shows",
-      "Random Show",
-      "Random body content."
+      "primary",
+      "Blog",
+      "Random body content.",
+      "randomShowContentCard5",
+      "randomContentGridItem5",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image6,
       "Random Title",
-      "secondary",
-      "Shows",
-      "Random Show",
-      "Random body content."
+      "primary",
+      "Blog",
+      "Random body content.",
+      "randomShowContentCard6",
+      "randomContentGridItem6",
+      "Random Title"
     ),
     createContentCard(
       "Random Image",
-      Image1,
+      Image7,
       "Random Title",
       "secondary",
       "Shows",
-      "Random Show",
-      "Random body content."
+      "Random body content.",
+      "randomShowContentCard7",
+      "randomContentGridItem7",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image8,
+      "Random Title",
+      "secondary",
+      "Shows",
+      "Random body content.",
+      "randomShowContentCard8",
+      "randomContentGridItem8",
+      "Random Title"
     ),
   ];
 
   return (
     <Grid container spacing={4} className={styles.root}>
       {contentCards.map((obj) => (
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={6} sm={3} key={obj.gridKey}>
           <ContentCard1
+            key={obj.contentKey}
             alt={obj.alt}
             image={obj.image}
             title={obj.title}
@@ -94,6 +139,11 @@ export default function ExploreContent() {
             category={obj.category}
             mainTitle={obj.mainTitle}
             body={obj.body}
+            isBlog={obj.isBlog}
+            ariaLabel={obj.ariaLabel}
+            avatarImg={obj.avatarImg}
+            headerTitle={obj.headerTitle}
+            headerDate={obj.headerDate}
           />
         </Grid>
       ))}

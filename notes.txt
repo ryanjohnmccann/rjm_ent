@@ -13,3 +13,114 @@ index.js
     - If you want to start measuring performance in your app, pass a function 
       to log results (for example: reportWebVitals(console.log))
       or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+
+
+
+
+
+          {/* <Box textAlign="center" pt={{ xs: 5, sm: 10 }} pb={{ xs: 5, sm: 0 }}>
+            Material UI Workshop &reg; {new Date().getFullYear()}
+          </Box> */}
+
+
+
+                      {/* <Grid item xs={12} sm={4}>
+              <Box className={styles.box}>Contact</Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Contact
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Support
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Privacy
+                </Link>
+              </Box>
+            </Grid> */}
+            {/* <Grid item xs={12} sm={4}>
+              <Box className={styles.box}>About</Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Contact
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Support
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Privacy
+                </Link>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box className={styles.box}>Support</Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Contact
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Support
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  className={styles.link}
+                  underline="none"
+                  color="inherit"
+                  href="/"
+                >
+                  Privacy
+                </Link>
+              </Box>
+            </Grid> */}

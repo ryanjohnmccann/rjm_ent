@@ -2,7 +2,7 @@
 
 .slideshow {
   margin: 0 auto;
-  margin-top: 1.5rem;
+  margin-top: 1vh;
   overflow: hidden;
   max-width: 1350px;
 }
@@ -15,7 +15,7 @@
 .slide {
   display: inline-block;
 
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
 
@@ -27,8 +27,8 @@
 
 .slideshowDot {
   display: inline-block;
-  height: 11px;
-  width: 11px;
+  height: 10.2px;
+  width: 10.2px;
   border-radius: 50%;
 
   cursor: pointer;
