@@ -1,0 +1,28 @@
+.mainGrid {
+  justify-content: center;
+}
+
+.linkGridItms {
+  padding-top: 6vh;
+}
+
+.icons {
+  font-size: 50px;
+}
+
+.links {
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.links:hover {
+  transition: 0.3s;
+  color: gray;
+}
+
+.rights {
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 5vh;
+  font-size: 20px;
+}
