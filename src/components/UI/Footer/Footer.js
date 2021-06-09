@@ -67,15 +67,15 @@ export default function Footer() {
   ];
   return (
     <footer>
-      <Box px={{ xs: 3, sm: 10 }} py={{ xs: 3, sm: 4 }} color="black">
+      <Box px={{ xs: 10, sm: 10 }} py={{ xs: 10, sm: 10 }}>
         <Container maxWidth="lg">
           <Grid container spacing={10} className={styles.mainGrid}>
             {links.map((obj) => (
               <Grid
                 item
-                style={{ paddingTop: "6vh" }}
                 className={styles.linkGridItms}
                 key={obj.gridKey}
+                style={{ paddingTop: "6vh" }}
               >
                 <Link
                   href={obj.href}
@@ -88,22 +88,18 @@ export default function Footer() {
                 </Link>
               </Grid>
             ))}
-            <Grid item>
-              <Grid container spacing={10}>
-                {icons.map((obj) => (
-                  <Grid item key={obj.gridKey}>
-                    <Link
-                      href={obj.href}
-                      className={styles.links}
-                      key={obj.linkKey}
-                      color={obj.color}
-                    >
-                      {obj.icon}
-                    </Link>
-                  </Grid>
-                ))}
+            {icons.map((obj) => (
+              <Grid item key={obj.gridKey}>
+                <Link
+                  href={obj.href}
+                  className={styles.icons}
+                  key={obj.linkKey}
+                  color={obj.color}
+                >
+                  {obj.icon}
+                </Link>
               </Grid>
-            </Grid>
+            ))}
           </Grid>
           <Box className={styles.rights}>
             &copy; 2021 - All rights reserved RJM Entertainment

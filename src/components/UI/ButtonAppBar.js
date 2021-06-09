@@ -6,7 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import styles from "./ButtonAppBar.module.css";
-import NavBar from "./NavBar/NavBar";
+import Drawer from "@material-ui/core/Drawer";
+import NavBarList from "./NavBar/NavBarList";
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -14,20 +15,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar(props) {
+export default function ButtonAppBar() {
   const classes = useStyles();
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState({
+    leftNav: false,
+  });
 
-  function openNavHandler() {
-    setShowNav(true);
+  const navHandler = (anchor, open) => (event) => {
+    if (typeof event === "undefined") {
+      // Do nothing
+    }
+    else if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setShowNav({ ...showNav, [anchor]: open });
     return;
-  }
-
-  
- function closeNavHandler() {
-    setShowNav(false);
-    return;
-  }
+  };
 
   return (
     <div className={styles.root}>
@@ -38,7 +44,7 @@ export default function ButtonAppBar(props) {
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
-            onClick={openNavHandler}
+            onClick={navHandler("leftNav", true)}
           >
             <MenuIcon />
           </IconButton>
@@ -47,7 +53,16 @@ export default function ButtonAppBar(props) {
           </Typography>
         </Toolbar>
       </AppBar>
-      {showNav && <NavBar showNav={showNav} closeNav={closeNavHandler} />}
+      {showNav && (
+        <Drawer
+          variant="temporary"
+          anchor="left"
+          open={showNav["leftNav"]}
+          onClose={navHandler("leftNav", false)}
+        >
+          <NavBarList buttonClicked={navHandler("leftNav", false)}/>
+        </Drawer>
+      )}
     </div>
   );
 }

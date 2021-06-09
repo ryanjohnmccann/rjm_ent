@@ -17,7 +17,7 @@ export default function NavBarList(props) {
   }
 
   function listItemHandler() {
-    
+    props.buttonClicked();
   }
 
   const listItems = [

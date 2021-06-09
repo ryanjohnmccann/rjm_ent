@@ -1,6 +1,23 @@
-
 .root {
-    padding-top: 2vh;
-    padding-left: 2.3vw;
-    padding-right: 2.3vw;
+  padding-top: 2vh;
+  padding-left: 2.3vw;
+  padding-right: 2.3vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .root {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .root {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .root {
+    padding-left: 2.6vw;
+  }
 }

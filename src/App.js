@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/UI/Footer/Footer";
 import Divider from "@material-ui/core/Divider";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
@@ -38,8 +39,10 @@ function App() {
           <Redirect to="/blog" />
         </Route>
       </Switch>
-      <Divider style={{marginTop: "6vh"}} />
-      <Footer />
+      <Divider style={{ marginTop: "6vh" }} />
+      <Fade cascade delay={500}>
+        <Footer />
+      </Fade>
     </div>
   );
 }

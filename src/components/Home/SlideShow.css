@@ -14,7 +14,6 @@
 
 .slide {
   display: inline-block;
-
   height: 550px;
   width: 100%;
 }
@@ -39,4 +38,12 @@
 
 .slideshowDot.active {
   background-color: rgb(85, 76, 76);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 415px) {
+  .slide {
+    height: 350px;
+  }
 }

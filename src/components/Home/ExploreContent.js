@@ -10,6 +10,7 @@ import Image7 from "../../assets/Home/ExploreContent/ExploreContent7.jpg";
 import Image8 from "../../assets/Home/ExploreContent/ExploreContent8.jpg";
 import Grid from "@material-ui/core/Grid";
 import styles from "./ExploreContent.module.css";
+import { Slide } from "react-awesome-reveal";
 
 export default function ExploreContent() {
   function createContentCard(
@@ -127,26 +128,28 @@ export default function ExploreContent() {
   ];
 
   return (
-    <Grid container spacing={4} className={styles.root}>
-      {contentCards.map((obj) => (
-        <Grid item xs={6} sm={3} key={obj.gridKey}>
-          <ContentCard1
-            key={obj.contentKey}
-            alt={obj.alt}
-            image={obj.image}
-            title={obj.title}
-            categoryColor={obj.categoryColor}
-            category={obj.category}
-            mainTitle={obj.mainTitle}
-            body={obj.body}
-            isBlog={obj.isBlog}
-            ariaLabel={obj.ariaLabel}
-            avatarImg={obj.avatarImg}
-            headerTitle={obj.headerTitle}
-            headerDate={obj.headerDate}
-          />
-        </Grid>
-      ))}
-    </Grid>
+    <Slide cascade triggerOnce delay={550}>
+      <Grid container spacing={4} className={styles.root}>
+        {contentCards.map((obj) => (
+          <Grid item lg={3} key={obj.gridKey}>
+            <ContentCard1
+              key={obj.contentKey}
+              alt={obj.alt}
+              image={obj.image}
+              title={obj.title}
+              categoryColor={obj.categoryColor}
+              category={obj.category}
+              mainTitle={obj.mainTitle}
+              body={obj.body}
+              isBlog={obj.isBlog}
+              ariaLabel={obj.ariaLabel}
+              avatarImg={obj.avatarImg}
+              headerTitle={obj.headerTitle}
+              headerDate={obj.headerDate}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </Slide>
   );
 }
