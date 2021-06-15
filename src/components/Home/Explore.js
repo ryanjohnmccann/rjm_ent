@@ -13,7 +13,7 @@ export default function Explore() {
           Explore
         </Typography>
       </Slide>
-      <Slide cascade triggerOnce delay={600}>
+      <Slide cascade triggerOnce fraction={0.3}>
         <ExploreCategories />
       </Slide>
       <Divider />

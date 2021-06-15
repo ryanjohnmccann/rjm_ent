@@ -6,8 +6,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import ContentCard2 from "../UI/ContentCards/ContentCard2";
-import Image1 from "../../assets/Shows/Show1.jpg";
+import ShowsContent from "./ShowsContent";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,10 +44,10 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    width: "90%",
+    width: "100%",
     backgroundColor: theme.palette.background.paper,
     marginTop: "3vh",
-    paddingLeft: "5vw",
+    paddingLeft: "1vw",
   },
 }));
 
@@ -62,13 +61,13 @@ export default function ShowTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="default" style={{width: "1300px"}}>
         <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-          variant="scrollable"
+          variant="fullWidth"
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
@@ -77,40 +76,22 @@ export default function ShowTabs() {
           <Tab label="Show Three" {...a11yProps(2)} />
           <Tab label="Show Four" {...a11yProps(3)} />
           <Tab label="Show Five" {...a11yProps(4)} />
-          <Tab label="Show Six" {...a11yProps(5)} />
-          <Tab label="Show Seven" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        {
-          <ContentCard2
-            alt=""
-            image={Image1}
-            title="Random Title"
-            categoryColor="primary"
-            category="Show 1"
-            mainTitle="Random Title"
-            body="Random body content."
-          />
-        }
+        <ShowsContent desIndex={0} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <ShowsContent desIndex={1} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <ShowsContent desIndex={2} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <ShowsContent desIndex={3} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
+        <ShowsContent desIndex={4} />
       </TabPanel>
     </div>
   );

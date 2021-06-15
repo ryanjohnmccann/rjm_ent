@@ -1,64 +1,45 @@
-// Source code: https://tinloof.com/blog/how-to-build-an-auto-play-slideshow-with-react/
-// ! I couldn't figure out how to transfer the classNames to CSS module to keep the convention. More
-// ! More specifically, how to transfer the className used in line 50 to a module.css format. Will change eventually.
-
 import React from "react";
-import "./SlideShow.css";
+import Carousel from "react-material-ui-carousel";
+import { Fade } from "react-awesome-reveal";
 import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpg";
 import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpg";
 import Image3 from "../../assets/Home/SlideShow/SlideShow3.jpg";
 import Image4 from "../../assets/Home/SlideShow/SlideShow4.jpg";
 import Image5 from "../../assets/Home/SlideShow/SlideShow5.jpg";
 
-export default function Slideshow() {
-  const pictures = [Image1, Image2, Image3, Image4, Image5];
-  const delay = 3200;
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
-
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  React.useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index, pictures.length]);
+export default function Test(props) {
+  var items = [
+    { image: Image1 },
+    { image: Image2 },
+    { image: Image3 },
+    { image: Image4 },
+    { image: Image5 },
+  ];
 
   return (
-    <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {pictures.map((Image, index) => (
-          <img className="slide" key={index} src={Image} alt="Slide Show" />
-        ))}
-      </div>
+    <Carousel>
+      {items.map((item, i) => (
+        <Item key={i} item={item} />
+      ))}
+    </Carousel>
+  );
+}
 
-      <div className="slideshowDots">
-        {pictures.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
-      </div>
-    </div>
+function Item(props) {
+  return (
+    <React.Fragment>
+      <Fade>
+        <img
+          src={props.item.image}
+          alt="Slide Show"
+          style={{
+            height: "65vh",
+            width: "97%",
+            marginTop: "1vh",
+            marginLeft: "1.5vw",
+          }}
+        />
+      </Fade>
+    </React.Fragment>
   );
 }

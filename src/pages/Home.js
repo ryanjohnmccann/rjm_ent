@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Fade cascade triggerOnce delay={500}>
+          <Fade triggerOnce delay={300}>
             <SlideShow />
           </Fade>
         </Grid>

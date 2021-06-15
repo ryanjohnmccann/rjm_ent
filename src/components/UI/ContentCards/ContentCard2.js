@@ -51,7 +51,7 @@ export default function ContentCard1(props) {
             color="textSecondary"
             className={styles.dateStyle}
           >
-            April 20, 1999
+            {props.date}
           </Typography>
         </CardContent>
       </CardActionArea>

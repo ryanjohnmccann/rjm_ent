@@ -13,9 +13,7 @@ import { Fade } from "react-awesome-reveal";
 function App() {
   return (
     <div>
-      {/* We probably have to move this somewhere else (Every page?) */}
       <ButtonAppBar />
-      {/* Don't render the routes in a list (using .map()) */}
       <Switch>
         <Route path="/" key="none" exact>
           <Redirect to="/home" />
@@ -40,7 +38,7 @@ function App() {
         </Route>
       </Switch>
       <Divider style={{ marginTop: "6vh" }} />
-      <Fade cascade delay={500}>
+      <Fade triggerOnce delay={200} fraction={0.3}>
         <Footer />
       </Fade>
     </div>
