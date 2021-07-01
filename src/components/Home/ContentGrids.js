@@ -1,6 +1,7 @@
 import React from "react";
 import ContentCard1 from "../UI/ContentCards/ContentCard1";
 import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
 import styles from "./ContentGrids.module.css";
 import Image1 from "../../assets/Home/ExploreContent/ExploreContent1.jpg";
@@ -103,113 +104,113 @@ const contentCards = [
       "Random Title"
     ),
   ],
-  // [
-  //   createContentCard(
-  //     "Random Image",
-  //     Image6,
-  //     "Random Title",
-  //     "secondary",
-  //     "Show",
-  //     "Random body content.",
-  //     "randomShowContentCard6-1",
-  //     "randomContentGridItem6-1",
-  //     "Random Title"
-  //   ),
-  //   createContentCard(
-  //     "Random Image",
-  //     Image5,
-  //     "Random Title",
-  //     "secondary",
-  //     "Show",
-  //     "Random body content.",
-  //     "randomShowContentCard5-1",
-  //     "randomContentGridItem5-1",
-  //     "Random Title"
-  //   ),
-  //   createContentCard(
-  //     "Random Image",
-  //     Image4,
-  //     "Random Title",
-  //     "primary",
-  //     "Blog",
-  //     "Random body content.",
-  //     "randomShowContentCard4-1",
-  //     "randomContentGridItem4-1",
-  //     "Random Title"
-  //   ),
-  //   createContentCard(
-  //     "Random Image",
-  //     Image3,
-  //     "Random Title",
-  //     "primary",
-  //     "Blog",
-  //     "Random body content.",
-  //     "randomShowContentCard3-1",
-  //     "randomContentGridItem3-1",
-  //     "Random Title"
-  //   ),
-  //   createContentCard(
-  //     "Random Image",
-  //     Image2,
-  //     "Random Title",
-  //     "secondary",
-  //     "Show",
-  //     "Random body content.",
-  //     "randomShowContentCard2-1",
-  //     "randomContentGridItem2-1",
-  //     "Random Title"
-  //   ),
-  //   createContentCard(
-  //     "Random Image",
-  //     Image1,
-  //     "Random Title",
-  //     "secondary",
-  //     "Show",
-  //     "Random body content.",
-  //     "randomShowContentCard1-1",
-  //     "randomContentGridItem1-1",
-  //     "Random Title"
-  //   ),
-  // ],
+  [
+    createContentCard(
+      "Random Image",
+      Image6,
+      "Random Title",
+      "secondary",
+      "Show",
+      "Random body content.",
+      "randomShowContentCard6-1",
+      "randomContentGridItem6-1",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image5,
+      "Random Title",
+      "secondary",
+      "Show",
+      "Random body content.",
+      "randomShowContentCard5-1",
+      "randomContentGridItem5-1",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image4,
+      "Random Title",
+      "primary",
+      "Blog",
+      "Random body content.",
+      "randomShowContentCard4-1",
+      "randomContentGridItem4-1",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image3,
+      "Random Title",
+      "primary",
+      "Blog",
+      "Random body content.",
+      "randomShowContentCard3-1",
+      "randomContentGridItem3-1",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image2,
+      "Random Title",
+      "secondary",
+      "Show",
+      "Random body content.",
+      "randomShowContentCard2-1",
+      "randomContentGridItem2-1",
+      "Random Title"
+    ),
+    createContentCard(
+      "Random Image",
+      Image1,
+      "Random Title",
+      "secondary",
+      "Show",
+      "Random body content.",
+      "randomShowContentCard1-1",
+      "randomContentGridItem1-1",
+      "Random Title"
+    ),
+  ],
 ];
 
-function createContentGrid(gridKey) {
-  return { gridKey };
+function createContentGrid(gridKey, boxKey) {
+  return { gridKey, boxKey };
 }
 
 const contentGrids = [
-  createContentGrid("randomContentGrid1"),
-  // createContentGrid("randomContentGrid2"),
+  createContentGrid("randomContentGrid1", "randomBoxKey1"),
+  createContentGrid("randomContentGrid2", "randomBoxKey2"),
 ];
 
 export default function ContentGrids(props) {
   return (
-    // <Carousel autoPlay={false} animation="slide" navButtonsAlwaysVisible>
-    <React.Fragment>
+    <Carousel autoPlay={false} animation="slide" navButtonsAlwaysVisible>
       {contentGrids.map((obj, index) => (
-        <Grid container spacing={3} key={obj.gridKey}>
-          {contentCards[index].map((obj2) => (
-            <Grid item lg={4} key={obj2.gridKey} className={styles.test} style={{paddingLeft: "4vw"}}>
-              <ContentCard1
-                key={obj2.contentKey}
-                alt={obj2.alt}
-                image={obj2.image}
-                title={obj2.title}
-                categoryColor={obj2.categoryColor}
-                category={obj2.category}
-                mainTitle={obj2.mainTitle}
-                body={obj2.body}
-                isBlog={obj2.isBlog}
-                ariaLabel={obj2.ariaLabel}
-                avatarImg={obj2.avatarImg}
-                headerTitle={obj2.headerTitle}
-                headerDate={obj2.headerDate}
-              />
-            </Grid>
-          ))}
-        </Grid>
+        <Box className={styles.test} key={obj.boxKey}>
+          <Grid container spacing={3} key={obj.gridKey}>
+            {contentCards[index].map((obj2) => (
+              <Grid item lg={4} key={obj2.gridKey}>
+                <ContentCard1
+                  key={obj2.contentKey}
+                  alt={obj2.alt}
+                  image={obj2.image}
+                  title={obj2.title}
+                  categoryColor={obj2.categoryColor}
+                  category={obj2.category}
+                  mainTitle={obj2.mainTitle}
+                  body={obj2.body}
+                  isBlog={obj2.isBlog}
+                  ariaLabel={obj2.ariaLabel}
+                  avatarImg={obj2.avatarImg}
+                  headerTitle={obj2.headerTitle}
+                  headerDate={obj2.headerDate}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       ))}
-    </React.Fragment>
-    // </Carousel>
+    </Carousel>
   );
 }

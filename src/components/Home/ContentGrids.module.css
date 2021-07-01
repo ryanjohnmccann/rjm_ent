@@ -1,1 +1,25 @@
+@media screen and (max-width: 360px) {
+  .test {
+    padding-right: 5vw;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 414px) {
+  .test {
+    padding-right: 5vw;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .test {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
 
+.test {
+  padding-left: 5.5vw;
+}

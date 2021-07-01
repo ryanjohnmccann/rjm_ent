@@ -50,6 +50,7 @@ export default function ContentCard1(props) {
             align="right"
             color="textSecondary"
             className={styles.dateStyle}
+            component="p"
           >
             {props.date}
           </Typography>

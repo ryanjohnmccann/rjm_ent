@@ -7,6 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import ShowsContent from "./ShowsContent";
+import styles from "./ShowTabs.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -21,7 +22,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box p={3}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -61,23 +62,25 @@ export default function ShowTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default" style={{width: "1300px"}}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          scrollButtons="auto"
-          aria-label="scrollable auto tabs example"
-        >
-          <Tab label="Show One" {...a11yProps(0)} />
-          <Tab label="Show Two" {...a11yProps(1)} />
-          <Tab label="Show Three" {...a11yProps(2)} />
-          <Tab label="Show Four" {...a11yProps(3)} />
-          <Tab label="Show Five" {...a11yProps(4)} />
-        </Tabs>
-      </AppBar>
+      <Box className={styles.appBar}>
+        <AppBar position="static" color="default">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            variant="fullWidth"
+            scrollButtons="auto"
+            aria-label="scrollable auto tabs example"
+          >
+            <Tab label="Show One" {...a11yProps(0)} />
+            <Tab label="Show Two" {...a11yProps(1)} />
+            <Tab label="Show Three" {...a11yProps(2)} />
+            <Tab label="Show Four" {...a11yProps(3)} />
+            <Tab label="Show Five" {...a11yProps(4)} />
+          </Tabs>
+        </AppBar>
+      </Box>
       <TabPanel value={value} index={0}>
         <ShowsContent desIndex={0} />
       </TabPanel>
