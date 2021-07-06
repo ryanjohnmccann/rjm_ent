@@ -1,35 +1,62 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import styles from "./ExploreCategories.module.css";
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Chip from "@material-ui/core/Chip";
+
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  chipsGrid: {
+    paddingTop: "1vh",
+    paddingLeft: "1.3vw",
+    paddingBottom: "4vh",
+  },
+}));
 
 export default function ExploreCategories() {
-  function createCategories(text, color, buttonKey, gridKey) {
-    return { text, color, buttonKey, gridKey };
+  const classes = useStyles();
+  function createCategories(text, color, chipKey, gridKey) {
+    return { text, color, chipKey, gridKey };
   }
   const categories = [
-    createCategories("All", "default", "categoryButton1", "categoryGridItem1"),
+    createCategories(
+      "All",
+      "#1D2EFF",
+      "allChipCategory",
+      "allChipCategoryGridItem"
+    ),
     createCategories(
       "Show",
-      "secondary",
-      "categoryButton2",
-      "categoryGridItem2"
+      "#8c1aff",
+      "showChipCategory",
+      "showChipCategoryGridItem"
     ),
-    createCategories("Blog", "primary", "categoryButton3", "categoryGridItem3"),
+    createCategories(
+      "Blog",
+      "#C30101",
+      "blogChipCategory",
+      "blogChipCategoryGridItem"
+    ),
   ];
 
+  // Will come back to this function in the future
+  function handleChipClick() {}
+
   return (
-    <Grid className={styles.buttonGrid} container spacing={2}>
+    <Grid className={classes.chipsGrid} container spacing={2}>
       {categories.map((obj) => (
         <Grid item key={obj.gridKey}>
-          <Button
-            key={obj.buttonKey}
-            className={styles.button}
+          <Chip
+            label={obj.text}
+            key={obj.chipKey}
+            onClick={handleChipClick}
             variant="outlined"
-            color={obj.color}
-          >
-            {obj.text}
-          </Button>
+            style={{
+              color: obj.color,
+              width: "120px",
+              fontSize: "18px",
+              borderColor: obj.color,
+            }}
+          />
         </Grid>
       ))}
     </Grid>

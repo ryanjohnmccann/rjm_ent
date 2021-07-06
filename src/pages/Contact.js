@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import ContactLinks from "../components/Contact/ContactLinks.js";
 import ContactForm from "../components/Contact/ContactForm.js";
 import Grid from "@material-ui/core/Grid";
+import Divider from "@material-ui/core/Divider";
 
 export default function Contact() {
   return (
@@ -36,7 +37,12 @@ export default function Contact() {
         </Fade>
       </Box>
       <Fade triggerOnce delay={600}>
-        <Grid container spacing={3} style={{ paddingLeft: "30vmin" }}>
+        <Divider />
+        <Grid
+          container
+          spacing={3}
+          style={{ paddingLeft: "25vmin", marginTop: "5vmin" }}
+        >
           <Grid item>
             <ContactLinks />
           </Grid>

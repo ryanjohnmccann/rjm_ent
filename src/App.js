@@ -1,13 +1,13 @@
 import React from "react";
-import ButtonAppBar from "./components/UI/ButtonAppBar";
 import { Route, Switch, Redirect } from "react-router-dom";
+import ButtonAppBar from "./components/UI/ButtonAppBar/ButtonAppBar";
+import Divider from "@material-ui/core/Divider";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/UI/Footer/Footer";
-import Divider from "@material-ui/core/Divider";
 import { Fade } from "react-awesome-reveal";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         </Route>
       </Switch>
       <Divider style={{ marginTop: "6vh" }} />
-      <Fade triggerOnce delay={200} fraction={0.3}>
+      <Fade triggerOnce delay={200} fraction={0.4}>
         <Footer />
       </Fade>
     </div>

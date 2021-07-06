@@ -1,15 +1,44 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
-import styles from "./Footer.module.css";
 import Link from "@material-ui/core/Link";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  mainGrid: {
+    justifyContent: "center",
+  },
+  icons: {
+    fontSize: "30px",
+    "&:hover": {
+      transition: "0.3s",
+      color: "gray",
+    },
+  },
+  links: {
+    fontSize: "30px",
+    fontFamily: "Roboto",
+    "&:hover": {
+      transition: "0.3s",
+      color: "gray",
+    },
+  },
+  rights: {
+    textAlign: "center",
+    fontFamily: "Roboto",
+    paddingTop: "5vh",
+    fontSize: "20px",
+  },
+}));
+
 export default function Footer() {
+  const classes = useStyles();
   function createLink(href, underline, color, text, linkKey, gridKey) {
     return { href, underline, color, text, linkKey, gridKey };
   }
@@ -41,7 +70,7 @@ export default function Footer() {
       <FacebookIcon style={{ fontSize: "50px" }} />,
       "footFaceBook",
       "faceBookGrid",
-      "primary"
+      "#4267B2"
     ),
     createIcon(
       "https://www.instagram.com",
@@ -55,28 +84,28 @@ export default function Footer() {
       <YouTubeIcon style={{ fontSize: "50px" }} />,
       "footYouTube",
       "youTubeGrid",
-      "secondary"
+      "#FF0000"
     ),
     createIcon(
       "https://www.twitter.com",
       <TwitterIcon style={{ fontSize: "50px" }} />,
       "footFaceBook",
       "twitterGrid",
-      "primary"
+      "#1DA1F2"
     ),
   ];
   return (
     <footer>
       <Box px={{ xs: 10, sm: 10 }} py={{ xs: 10, sm: 10 }}>
-        <Container maxWidth="lg">
-          <Grid container spacing={10} className={styles.mainGrid}>
+        <Container>
+          <Grid container spacing={10} className={classes.mainGrid}>
             {links.map((obj) => (
-              <Grid item key={obj.gridKey} style={{ paddingTop: "6vh" }}>
+              <Grid item key={obj.gridKey}>
                 <Link
                   href={obj.href}
                   underline={obj.underline}
                   color={obj.color}
-                  className={styles.links}
+                  className={classes.links}
                   key={obj.linkKey}
                 >
                   {obj.text}
@@ -87,21 +116,19 @@ export default function Footer() {
               <Grid item key={obj.gridKey}>
                 <Link
                   href={obj.href}
-                  className={styles.icons}
+                  className={classes.icons}
                   key={obj.linkKey}
-                  color={obj.color}
                   target="_blank"
+                  style={{color: obj.color}}
                 >
                   {obj.icon}
                 </Link>
               </Grid>
             ))}
           </Grid>
-          <Grid item>
-            <Box className={styles.rights}>
-              &copy; 2021 - All rights reserved RJM Entertainment
-            </Box>
-          </Grid>
+          <Box className={classes.rights}>
+            &copy; 2021 - All rights reserved RJM Entertainment
+          </Box>
         </Container>
       </Box>
     </footer>
