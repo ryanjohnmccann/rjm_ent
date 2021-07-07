@@ -1,16 +1,16 @@
 import React from "react";
-import ContentCard3 from "../UI/ContentCards/ContentCard3";
 import Grid from "@material-ui/core/Grid";
+import ContentCard3 from "../UI/ContentCards/ContentCard3";
+import aboutContentCards from "./create-about-content";
 
 export default function AboutContent() {
   return (
-    <Grid container spacing={10} style={{ marginLeft: "15vmin" }}>
-      <Grid item>
-        <ContentCard3 />
-      </Grid>
-      <Grid item>
-        <ContentCard3 />
-      </Grid>
+    <Grid container spacing={3} justify="center" align="center">
+      {aboutContentCards.map((obj) => (
+        <Grid item key={obj.aboutGridKey}>
+          <ContentCard3 img={obj.img} name={obj.name} position={obj.position} summary={obj.summary} buttons={obj.buttons} />
+        </Grid>
+      ))}
     </Grid>
   );
 }

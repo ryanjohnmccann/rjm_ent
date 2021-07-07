@@ -1,22 +1,46 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import { Fade } from "react-awesome-reveal";
-import styles from "../components/About/About.module.css";
-import AboutContent from "../components/About/AboutContent";
-import Divider from "@material-ui/core/Divider";
 import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import AboutContent from "../components/About/AboutContent";
+import { Fade } from "react-awesome-reveal";
+
+// ! Center accordingly (Not on some screen sizes!) The "Our Team" header
+
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginLeft: "3vw",
+    marginTop: "2vh",
+    marginBottom: "2.5vh",
+  },
+  aboutDetails: {
+    maxWidth: "90%",
+    paddingTop: "2vh",
+  },
+  divider: {
+    marginLeft: "5px",
+    width: "200px",
+    height: "3px",
+  },
+  gridContainer: {
+    marginTop: "30px",
+  },
+}));
 
 export default function About() {
+  const classes = useStyles();
   return (
     <div>
-      <Box className={styles.root}>
+      <Box className={classes.root}>
         <Fade triggerOnce delay={200}>
           <Typography variant="h2">About</Typography>
         </Fade>
         <Fade triggerOnce delay={400}>
           <Typography
-            className={styles.aboutDetails}
+            className={classes.aboutDetails}
             color="textSecondary"
             variant="subtitle1"
             component="p"
@@ -36,12 +60,15 @@ export default function About() {
         </Fade>
         <Fade triggerOnce delay={550}>
           <Typography variant="h3">Our Team</Typography>
+          <Divider className={classes.divider} />
         </Fade>
       </Box>
-      <Fade triggerOnce delay={600}>
-        <Divider />
-      </Fade>
-      <Grid container style={{ marginTop: "5vmin", marginLeft: "5.5vmin" }}>
+      <Grid
+        container
+        className={classes.gridContainer}
+        justify="center"
+        align="center"
+      >
         <Grid item>
           <Fade triggerOnce delay={600}>
             <AboutContent />

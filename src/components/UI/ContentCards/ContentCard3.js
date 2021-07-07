@@ -6,11 +6,12 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import About1 from "../../../assets/About/About1.jpg";
 
 const useStyles = makeStyles({
   root: {
+    backgroundColor: "#FBFBFB",
     maxWidth: 450,
+    height: "650px",
   },
   title: {
     fontSize: 30,
@@ -19,58 +20,50 @@ const useStyles = makeStyles({
     marginBottom: 12,
     fontSize: 24,
   },
+  teamImg: {
+    height: "175px",
+    width: "180px",
+    borderRadius: "50%",
+  },
+  summary: {
+    textAlign: "left",
+    height: "280px",
+  },
 });
 
-export default function ContentCard3() {
+export default function ContentCard3(props) {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-      <CardContent>
+      <CardContent style={{ backgroundColor: "#FBFBFB" }}>
         <CardMedia>
-          <img
-            alt="Random Alt"
-            src={About1}
-            style={{
-              height: "165px",
-              width: "170px",
-              borderRadius: "50%",
-              marginLeft: "15.5vmin"
-            }}
-          />
+          <img alt="Random Alt" src={props.img} className={classes.teamImg} />
         </CardMedia>
         <Typography
           className={classes.title}
           color="textPrimary"
           style={{ textAlign: "center" }}
         >
-          Ryan McCann
+          {props.name}
         </Typography>
         <Typography
           className={classes.pos}
           color="textSecondary"
           style={{ textAlign: "center" }}
         >
-          Co-Founder and CTO
+          {props.position}
         </Typography>
-        <Typography
-          variant="body1"
-          component="p"
-        >
-          Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt
-          ex proident non dolore. Sunt consectetur incididunt aute amet laboris
-          cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut
-          dolor ullamco proident duis minim magna culpa. Incididunt mollit
-          labore irure mollit velit ut cillum dolor irure commodo esse
-          voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur
-          veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute
-          nostrud pariatur adipisicing dolore est fugiat culpa consectetur. Est
-          in cupidatat culpa minim id ipsum labore do ad reprehenderit.
+        <Typography variant="body1" component="p" className={classes.summary}>
+          {props.summary}
         </Typography>
       </CardContent>
-      <CardActions style={{ justifyContent: "center" }}>
-        <Button size="medium">LinkedIn</Button>
-        <Button size="medium">Website</Button>
+      <CardActions
+        style={{ justifyContent: "center", backgroundColor: "#FBFBFB" }}
+      >
+        {props.buttons.map((obj) => (
+          <Button size="medium" href={obj.link} key={obj.key}>{obj.txt}</Button>
+        ))}
       </CardActions>
     </Card>
   );
