@@ -18,12 +18,15 @@ export default function ContentCard1(props) {
           image={props.image}
           title={props.title}
         />
-        <CardContent className={styles.cardContent}>
+        <CardContent
+          className={styles.cardContent}
+          style={{ backgroundColor: "#FBFBFB" }}
+        >
           <Typography
             gutterBottom
             variant="subtitle1"
             component="p"
-            color={props.categoryColor}
+            style={{ color: props.categoryColor }}
           >
             {props.category}
           </Typography>

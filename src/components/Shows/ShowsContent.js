@@ -1,42 +1,23 @@
 import React from "react";
-import Show1 from "../../assets/Shows/Show1.jpg";
-import Show2 from "../../assets/Shows/Show2.jpg";
-import Show3 from "../../assets/Shows/Show3.jpg";
-import Show4 from "../../assets/Shows/Show4.jpg";
-import Show5 from "../../assets/Shows/Show5.jpg";
+import { makeStyles } from "@material-ui/core/styles";
 import ContentCard2 from "../UI/ContentCards/ContentCard2";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
-import styles from "./ShowsContent.module.css";
+import showsContent from "./create-shows-content.js";
+
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  rootBox: {},
+  childBox: {
+    height: "361px",
+    overflowY: "auto",
+    overflowX: "hidden",
+  },
+}));
 
 export default function ShowsContent(props) {
-  function createShowContent(
-    alt,
-    image,
-    title,
-    categoryColor,
-    category,
-    mainTitle,
-    body,
-    date,
-    contentKey,
-    gridKey
-  ) {
-    return {
-      alt,
-      image,
-      title,
-      categoryColor,
-      category,
-      mainTitle,
-      body,
-      date,
-      contentKey,
-      gridKey,
-    };
-  }
-
+  const classes = useStyles();
   function createShowGrid(gridKey, boxKey, loc) {
     return { gridKey, boxKey, loc };
   }
@@ -51,130 +32,22 @@ export default function ShowsContent(props) {
     [createShowGrid("randomShowGridKey4", "randomBoxKeyShows4", 3)],
     [createShowGrid("randomShowGridKey5", "randomBoxKeyShows5", 4)],
   ];
-  const showsContent = [
-    [
-      [
-        createShowContent(
-          "Random alt",
-          Show1,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show1Key1",
-          "Show1GridKey1"
-        ),
-        createShowContent(
-          "Random alt",
-          Show1,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show1Key2",
-          "Show1GridKey2"
-        ),
-        createShowContent(
-          "Random alt",
-          Show1,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show1Key3",
-          "Show1GridKey3"
-        ),
-      ],
-      [
-        createShowContent(
-          "Random alt",
-          Show1,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show1Key4",
-          "Show1GridKey4"
-        ),
-      ],
-    ],
-    [
-      [
-        createShowContent(
-          "Random alt",
-          Show2,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show2Key"
-        ),
-      ],
-    ],
-    [
-      [
-        createShowContent(
-          "Random alt",
-          Show3,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show3Key"
-        ),
-      ],
-    ],
-    [
-      [
-        createShowContent(
-          "Random alt",
-          Show4,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show4Key"
-        ),
-      ],
-    ],
-    [
-      [
-        createShowContent(
-          "Random alt",
-          Show5,
-          "Random Title",
-          "primary",
-          "Random Show Category",
-          "Random Title",
-          "Random body content",
-          "April 20, 1999",
-          "Show5Key"
-        ),
-      ],
-    ],
-  ];
+
   return (
-    <Box component="div" className={styles.rootBox}>
-      <Carousel autoPlay={false} animation="slide" navButtonsAlwaysVisible>
+    <Box component="div" className={classes.rootBox}>
+      <Carousel autoPlay={false} animation="slide">
         {showGrids[props.desIndex].map((obj, index) => (
-          <Box component="div" key={obj.boxKey} className={styles.childBox}>
-            <Grid container spacing={6} direction="row" key={obj.gridKey}>
+          <Box component="div" key={obj.boxKey} className={classes.childBox}>
+            <Grid
+              container
+              spacing={2}
+              direction="row"
+              key={obj.gridKey}
+              justify="center"
+              align="center"
+            >
               {showsContent[obj.loc][index].map((obj2) => (
-                <Grid item key={obj2.gridKey}>
+                <Grid item key={obj2.gridKey} sm={5} lg={4}>
                   <ContentCard2
                     alt={obj2.alt}
                     image={obj2.image}

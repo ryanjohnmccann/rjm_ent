@@ -7,7 +7,22 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import BlogContent from "./BlogContent";
-import styles from "./BlogTabs.module.css";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    width: "100%",
+    backgroundColor: theme.palette.background.paper,
+    marginTop: "3vh",
+    paddingLeft: "1vw",
+  },
+  indicator: {
+    backgroundColor: "#8c1aff",
+  },
+  appBar: {
+    width: "90.4vw",
+  },
+}));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -42,16 +57,6 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    width: "100%",
-    backgroundColor: theme.palette.background.paper,
-    marginTop: "3vh",
-    paddingLeft: "1vw",
-  },
-}));
-
 export default function BlogTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -62,22 +67,43 @@ export default function BlogTabs() {
 
   return (
     <div className={classes.root}>
-      <Box className={styles.appBar}>
+      <Box className={classes.appBar}>
         <AppBar position="static" color="default">
           <Tabs
             value={value}
             onChange={handleChange}
-            indicatorColor="secondary"
-            textColor="secondary"
+            classes={{
+              indicator: classes.indicator,
+            }}
             variant="fullWidth"
             scrollButtons="auto"
             aria-label="scrollable auto tabs example"
           >
-            <Tab label="Show One" {...a11yProps(0)} />
-            <Tab label="Show Two" {...a11yProps(1)} />
-            <Tab label="Show Three" {...a11yProps(2)} />
-            <Tab label="Show Four" {...a11yProps(3)} />
-            <Tab label="Show Five" {...a11yProps(4)} />
+            <Tab
+              label="Show One"
+              {...a11yProps(0)}
+              style={{ color: "black" }}
+            />
+            <Tab
+              label="Show Two"
+              {...a11yProps(1)}
+              style={{ color: "black" }}
+            />
+            <Tab
+              label="Show Three"
+              {...a11yProps(2)}
+              style={{ color: "black" }}
+            />
+            <Tab
+              label="Show Four"
+              {...a11yProps(3)}
+              style={{ color: "black" }}
+            />
+            <Tab
+              label="Show Five"
+              {...a11yProps(4)}
+              style={{ color: "black" }}
+            />
           </Tabs>
         </AppBar>
       </Box>

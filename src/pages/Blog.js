@@ -1,21 +1,35 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { Fade } from "react-awesome-reveal";
-import styles from "../components/Blog/Blog.module.css";
 import BlogTabs from "../components/Blog/BlogTabs";
 
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  root: {},
+  header: {
+    marginLeft: "3vw",
+    marginTop: "2vh",
+  },
+  blogDetails: {
+    maxWidth: "90%",
+    paddingTop: "2vh",
+  },
+}));
+
 export default function Blog() {
+  const classes = useStyles();
   return (
     <div>
-      <Grid container className={styles.root}>
-        <Grid item>
+      <Grid container className={classes.root}>
+        <Grid item className={classes.header}>
           <Fade triggerOnce delay={200}>
             <Typography variant="h2">Blog</Typography>
           </Fade>
           <Fade triggerOnce delay={400}>
             <Typography
-              className={styles.blogsDetails}
+              className={classes.blogDetails}
               color="textSecondary"
               variant="subtitle1"
               component="p"
@@ -34,7 +48,7 @@ export default function Blog() {
             </Typography>
           </Fade>
         </Grid>
-        <Grid item>
+        <Grid item container align="center" justify="center">
           <Fade triggerOnce delay={600}>
             <BlogTabs />
           </Fade>
