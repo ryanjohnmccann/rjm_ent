@@ -1,5 +1,4 @@
 import styles from "./ContactForm.module.css";
-import React from "react";
 
 export default function ContactForm() {
   return (
@@ -44,8 +43,13 @@ export default function ContactForm() {
           style={{ height: "140px" }}
           placeholder="Your message"
         ></textarea>
-
-        <input className={styles.contactButton} type="submit" value="Submit" />
+        <div className={styles.contactDiv}>
+          <input
+            className={styles.contactButton}
+            type="submit"
+            value="Submit"
+          />
+        </div>
       </form>
     </div>
   );

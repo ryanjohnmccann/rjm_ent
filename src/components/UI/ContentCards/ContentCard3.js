@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -7,11 +7,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#FBFBFB",
-    maxWidth: 450,
-    height: "650px",
+    backgroundColor: "#F7F7F7",
+    maxWidth: "450px",
+    [theme.breakpoints.down(321)]: {
+      width: "310px",
+    },
   },
   title: {
     fontSize: 30,
@@ -27,16 +29,21 @@ const useStyles = makeStyles({
   },
   summary: {
     textAlign: "left",
-    height: "280px",
+    // This if statement doesn't work?
+    [theme.breakpoints.up(768)]: {
+      height: (props) =>
+        props.aboutGridKey === "about5Grid" ? "1px" : "280px",
+    },
   },
-});
+}));
 
 export default function ContentCard3(props) {
-  const classes = useStyles();
+  const theme = useTheme();
+  const classes = useStyles(theme, props);
 
   return (
     <Card className={classes.root}>
-      <CardContent style={{ backgroundColor: "#FBFBFB" }}>
+      <CardContent style={{ backgroundColor: "#F7F7F7" }}>
         <CardMedia>
           <img alt="Random Alt" src={props.img} className={classes.teamImg} />
         </CardMedia>
@@ -59,10 +66,12 @@ export default function ContentCard3(props) {
         </Typography>
       </CardContent>
       <CardActions
-        style={{ justifyContent: "center", backgroundColor: "#FBFBFB" }}
+        style={{ justifyContent: "center", backgroundColor: "#F7F7F7" }}
       >
         {props.buttons.map((obj) => (
-          <Button size="medium" href={obj.link} key={obj.key}>{obj.txt}</Button>
+          <Button size="medium" href={obj.link} target="_blank" key={obj.key}>
+            {obj.txt}
+          </Button>
         ))}
       </CardActions>
     </Card>

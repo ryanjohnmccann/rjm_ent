@@ -9,57 +9,124 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import PhoneIphoneRoundedIcon from "@material-ui/icons/PhoneIphoneRounded";
 import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    width: 450,
-    maxHeight: 350,
+    maxWidth: 450,
+    [theme.breakpoints.down(321)]: {
+      overflow: "auto",
+      width: "350px",
+    },
+    maxHeight: 435,
+    backgroundColor: "#EEEEEE",
   },
-});
+  emailIcon: {
+    fontSize: "40px",
+  },
+  linkText: {
+    color: "black",
+    fontSize: "25px",
+    "&:hover": {
+      transition: "0.3s",
+      color: "gray",
+    },
+    textDecoration: "none",
+  },
+  iPhoneIcon: {
+    fontSize: "40px",
+    color: "#BA0C2E",
+  },
+  twitterIcon: {
+    fontSize: "40px",
+    color: "#1DA1F2",
+  },
+  instagramIcon: {
+    fontSize: "40px",
+  },
+}));
 
 export default function ContactLinks() {
   const classes = useStyles();
-
+  const links = {
+    email: "https://www.google.com",
+    phone: "https://www.google.com",
+    twitter: "https://www.google.com",
+    instagram: "https://www.google.com",
+  };
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Grid container spacing={0} direction="column">
+        <Grid
+          container
+          spacing={2}
+          direction="column"
+          justify="center"
+          align="center"
+        >
           <Grid item>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} justify="center" align="center">
               <Grid item>
-                <EmailRoundedIcon style={{fontSize: "40px"}} />
+                <EmailRoundedIcon className={classes.emailIcon} />
               </Grid>
               <Grid item>
-                <Typography style={{fontSize: "25px"}}>rjmentertainment@gmail.com</Typography>
+                <Typography
+                  component="a"
+                  href={links.email}
+                  target="_blank"
+                  className={classes.linkText}
+                >
+                  rjmentertainment@gmail.com
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
           <Grid item>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} justify="center" align="center">
               <Grid item>
-                <PhoneIphoneRoundedIcon style={{fontSize: "40px"}} />
+                <PhoneIphoneRoundedIcon className={classes.iPhoneIcon} />
               </Grid>
               <Grid item>
-                <Typography style={{fontSize: "25px"}}>(978) 852 - 3328</Typography>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item>
-            <Grid container spacing={1}>
-              <Grid item>
-                <TwitterIcon style={{fontSize: "40px"}}/>
-              </Grid>
-              <Grid item>
-                <Typography style={{fontSize: "25px"}}>Twitter</Typography>
+                <Typography
+                  component="a"
+                  href={links.phone}
+                  target="_blank"
+                  className={classes.linkText}
+                >
+                  (978) 852 - 3328
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
           <Grid item>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} justify="center" align="center">
               <Grid item>
-                <InstagramIcon style={{fontSize: "40px"}}/>
+                <TwitterIcon className={classes.twitterIcon} />
               </Grid>
               <Grid item>
-                <Typography style={{fontSize: "25px"}}>Instagram</Typography>
+                <Typography
+                  component="a"
+                  href={links.twitter}
+                  target="_blank"
+                  className={classes.linkText}
+                >
+                  Twitter
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item>
+            <Grid container spacing={1} justify="center" align="center">
+              <Grid item>
+                <InstagramIcon className={classes.instagramIcon} />
+              </Grid>
+              <Grid item>
+                <Typography
+                  component="a"
+                  href={links.instagram}
+                  target="_blank"
+                  className={classes.linkText}
+                >
+                  Instagram
+                </Typography>
               </Grid>
             </Grid>
           </Grid>

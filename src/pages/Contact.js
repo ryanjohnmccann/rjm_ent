@@ -1,23 +1,39 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { Fade } from "react-awesome-reveal";
-import styles from "../components/Contact/Contact.module.css";
 import Box from "@material-ui/core/Box";
-import ContactLinks from "../components/Contact/ContactLinks.js";
-import ContactForm from "../components/Contact/ContactForm.js";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
+import ContactLinks from "../components/Contact/ContactLinks.js";
+import ContactForm from "../components/Contact/ContactForm.js";
+import { Fade } from "react-awesome-reveal";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginLeft: "3vw",
+    marginTop: "2vh",
+    marginBottom: "2.5vh",
+  },
+  contactDetails: {
+    maxWidth: "85%",
+    paddingTop: "2vh",
+  },
+  linkGrid: {
+    marginTop: "5vmin",
+  },
+}));
 
 export default function Contact() {
+  const classes = useStyles();
   return (
     <div>
-      <Box className={styles.root}>
+      <Box className={classes.root}>
         <Fade triggerOnce delay={200}>
           <Typography variant="h2">Contact</Typography>
         </Fade>
         <Fade triggerOnce delay={400}>
           <Typography
-            className={styles.contactDetails}
+            className={classes.contactDetails}
             color="textSecondary"
             variant="subtitle1"
             component="p"
@@ -41,7 +57,8 @@ export default function Contact() {
         <Grid
           container
           spacing={3}
-          style={{ paddingLeft: "25vmin", marginTop: "5vmin" }}
+          className={classes.linkGrid}
+          justify="center"
         >
           <Grid item>
             <ContactLinks />

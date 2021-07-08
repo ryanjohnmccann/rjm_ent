@@ -7,8 +7,6 @@ import Divider from "@material-ui/core/Divider";
 import AboutContent from "../components/About/AboutContent";
 import { Fade } from "react-awesome-reveal";
 
-// ! Center accordingly (Not on some screen sizes!) The "Our Team" header
-
 // Handles styling
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,10 +18,20 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "90%",
     paddingTop: "2vh",
   },
+  secondaryHeader: {
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+    },
+  },
   divider: {
     marginLeft: "5px",
     width: "200px",
     height: "3px",
+    color: "purple",
+    background: "#164AB2",
+    [theme.breakpoints.down("md")]: {
+      margin: "auto",
+    },
   },
   gridContainer: {
     marginTop: "30px",
@@ -58,10 +66,15 @@ export default function About() {
             ad reprehenderit.
           </Typography>
         </Fade>
-        <Fade triggerOnce delay={550}>
-          <Typography variant="h3">Our Team</Typography>
-          <Divider className={classes.divider} />
-        </Fade>
+        <Box className={classes.secondaryHeader}>
+          <Fade triggerOnce delay={550}>
+            <Typography variant="h3">Our Team</Typography>
+            <Divider
+              className={classes.divider}
+              classes={{ root: classes.divider }}
+            />
+          </Fade>
+        </Box>
       </Box>
       <Grid
         container

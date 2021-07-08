@@ -43,7 +43,7 @@ export default function ShowsContent(props) {
               spacing={2}
               direction="row"
               key={obj.gridKey}
-              justify="center"
+              justifyContent="flex-start"
               align="center"
             >
               {showsContent[obj.loc][index].map((obj2) => (

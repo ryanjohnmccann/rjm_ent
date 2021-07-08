@@ -36,6 +36,7 @@ export default function ContentGrids() {
           container
           spacing={1}
           align="center"
+          justifyContent="flex-start"
           direction="row"
           key={obj.gridKey}
           className={classes.gridContainer}

@@ -8,7 +8,15 @@ export default function AboutContent() {
     <Grid container spacing={3} justify="center" align="center">
       {aboutContentCards.map((obj) => (
         <Grid item key={obj.aboutGridKey}>
-          <ContentCard3 img={obj.img} name={obj.name} position={obj.position} summary={obj.summary} buttons={obj.buttons} />
+          <ContentCard3
+            img={obj.img}
+            name={obj.name}
+            position={obj.position}
+            summary={obj.summary}
+            height={obj.summaryHeight}
+            buttons={obj.buttons}
+            aboutGridKey={obj.aboutGridKey}
+          />
         </Grid>
       ))}
     </Grid>
