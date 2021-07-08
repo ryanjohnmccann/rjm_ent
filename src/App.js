@@ -1,18 +1,19 @@
 import React from "react";
-import ButtonAppBar from "./components/UI/ButtonAppBar";
 import { Route, Switch, Redirect } from "react-router-dom";
+import ButtonAppBar from "./components/UI/ButtonAppBar/ButtonAppBar";
+import Divider from "@material-ui/core/Divider";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/UI/Footer/Footer";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
     <div>
-      {/* We probably have to move this somewhere else (Every page?) */}
       <ButtonAppBar />
-      {/* Don't render the routes in a list (using .map()) */}
       <Switch>
         <Route path="/" key="none" exact>
           <Redirect to="/home" />
@@ -36,6 +37,10 @@ function App() {
           <Redirect to="/blog" />
         </Route>
       </Switch>
+      <Divider style={{ marginTop: "6vh" }} />
+      <Fade triggerOnce delay={200} fraction={0.4}>
+        <Footer />
+      </Fade>
     </div>
   );
 }
