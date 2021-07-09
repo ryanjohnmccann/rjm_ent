@@ -14,6 +14,13 @@ const useStyles = makeStyles((theme) => ({
     overflowY: "auto",
     overflowX: "hidden",
   },
+  showsGrid: {
+    justifyContent: "flex-start",
+    [theme.breakpoints.down("md")]: {
+      justifyContent: "center",
+    },
+    alignContent: "center",
+  },
 }));
 
 export default function ShowsContent(props) {
@@ -43,8 +50,7 @@ export default function ShowsContent(props) {
               spacing={2}
               direction="row"
               key={obj.gridKey}
-              justifyContent="flex-start"
-              align="center"
+              className={classes.showsGrid}
             >
               {showsContent[obj.loc][index].map((obj2) => (
                 <Grid item key={obj2.gridKey} sm={5} lg={4}>
