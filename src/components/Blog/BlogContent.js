@@ -1,9 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import ContentCard2 from "../UI/ContentCards/ContentCard2";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
+import ContentCard2 from "../UI/ContentCards/ContentCard2";
 import blogContent from "./create-blog-content";
 
 // Handles styling
@@ -13,6 +13,13 @@ const useStyles = makeStyles((theme) => ({
     height: "361px",
     overflowY: "auto",
     overflowX: "hidden",
+  },
+  blogGrid: {
+    justifyContent: "flex-start",
+    [theme.breakpoints.down("md")]: {
+      justifyContent: "center",
+    },
+    alignContent: "center",
   },
 }));
 
@@ -43,8 +50,7 @@ export default function BlogContent(props) {
               spacing={2}
               direction="row"
               key={obj.gridKey}
-              justifyContent="flex-start"
-              align="center"
+              className={classes.blogGrid}
             >
               {blogContent[obj.loc][index].map((obj2) => (
                 <Grid item key={obj2.gridKey} sm={5} lg={4}>
