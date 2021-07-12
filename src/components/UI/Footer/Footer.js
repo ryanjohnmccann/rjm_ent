@@ -68,20 +68,20 @@ export default function Footer() {
   }
   const links = [
     createLink(
-      "/contact",
-      "none",
-      "inherit",
-      "Contact",
-      "footContactLink",
-      "footContactGrid"
-    ),
-    createLink(
       "/about",
       "none",
       "inherit",
       "About",
       "footAboutLink",
       "footAboutGrid"
+    ),
+    createLink(
+      "/contact",
+      "none",
+      "inherit",
+      "Contact",
+      "footContactLink",
+      "footContactGrid"
     ),
   ];
   const icons = [

@@ -37,7 +37,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Convallis a cras semper auctor neque vitae. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Adipiscing...",
       "randomShowContentCard1",
       "randomContentGridItem1",
       "Random Title"
@@ -48,7 +48,7 @@ const contentCards = [
       "Random Title",
       "#C30101",
       "Blog",
-      "Random body content.",
+      "Viverra adipiscing at in tellus integer feugiat. Amet nisl suscipit adipiscing bibendum est ultricies. Vitae congue...",
       "randomShowContentCard2",
       "randomContentGridItem2",
       "Random Title"
@@ -59,7 +59,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "randomShowContentCard3",
       "randomContentGridItem3",
       "Random Title"
@@ -70,7 +70,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "randomShowContentCard4",
       "randomContentGridItem4",
       "Random Title"
@@ -81,7 +81,7 @@ const contentCards = [
       "Random Title",
       "#C30101",
       "Blog",
-      "Random body content.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing nisi ut aliquip ex ea commodo consequat. Dolor sit amet...",
       "randomShowContentCard5",
       "randomContentGridItem5",
       "Random Title"
@@ -92,7 +92,7 @@ const contentCards = [
       "Random Title",
       "#C30101",
       "Blog",
-      "Random body content.",
+      "Convallis a cras semper auctor neque vitae. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Adipiscing...",
       "randomShowContentCard6",
       "randomContentGridItem6",
       "Random Title"
@@ -105,7 +105,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Convallis a cras semper auctor neque vitae. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Adipiscing...",
       "randomShowContentCard6-1",
       "randomContentGridItem6-1",
       "Random Title"
@@ -116,7 +116,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing nisi ut aliquip ex ea commodo consequat. Dolor sit amet...",
       "randomShowContentCard5-1",
       "randomContentGridItem5-1",
       "Random Title"
@@ -127,7 +127,7 @@ const contentCards = [
       "Random Title",
       "#C30101",
       "Blog",
-      "Random body content.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "randomShowContentCard4-1",
       "randomContentGridItem4-1",
       "Random Title"
@@ -138,7 +138,7 @@ const contentCards = [
       "Random Title",
       "#C30101",
       "Blog",
-      "Random body content.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "randomShowContentCard3-1",
       "randomContentGridItem3-1",
       "Random Title"
@@ -149,7 +149,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Viverra adipiscing at in tellus integer feugiat. Amet nisl suscipit adipiscing bibendum est ultricies. Vitae congue...",
       "randomShowContentCard2-1",
       "randomContentGridItem2-1",
       "Random Title"
@@ -160,7 +160,7 @@ const contentCards = [
       "Random Title",
       "#8c1aff",
       "Show",
-      "Random body content.",
+      "Convallis a cras semper auctor neque vitae. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Adipiscing...",
       "randomShowContentCard1-1",
       "randomContentGridItem1-1",
       "Random Title"

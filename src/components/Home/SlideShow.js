@@ -17,7 +17,7 @@ export default function Test(props) {
   ];
 
   return (
-    <Carousel>
+    <Carousel interval={6000}>
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
@@ -29,16 +29,22 @@ function Item(props) {
   return (
     <React.Fragment>
       <Fade>
-        <img
-          src={props.item.image}
-          alt="Slide Show"
-          style={{
-            height: "65vh",
-            width: "97%",
-            marginTop: "1vh",
-            marginLeft: "1.5vw",
-          }}
-        />
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={props.item.image}
+            alt="Slide Show"
+            style={{
+              height: "65vh",
+              width: "97%",
+              marginTop: "1vh",
+              marginLeft: "1.5vw",
+            }}
+          />
+        </a>
       </Fade>
     </React.Fragment>
   );

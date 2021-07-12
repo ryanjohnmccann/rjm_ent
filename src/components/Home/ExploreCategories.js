@@ -50,16 +50,6 @@ export default function ExploreCategories() {
       "#1D2EFF"
     ),
     createCategories(
-      "Show",
-      "#8c1aff",
-      "white",
-      "showChipCategory",
-      "showChipCategoryGridItem",
-      showButton,
-      "white",
-      "#8c1aff"
-    ),
-    createCategories(
       "Blog",
       "#C30101",
       "white",
@@ -68,6 +58,16 @@ export default function ExploreCategories() {
       blogButton,
       "white",
       "#C30101"
+    ),
+    createCategories(
+      "Show",
+      "#8c1aff",
+      "white",
+      "showChipCategory",
+      "showChipCategoryGridItem",
+      showButton,
+      "white",
+      "#8c1aff"
     ),
   ];
 

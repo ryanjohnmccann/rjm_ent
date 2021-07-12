@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "left",
-    maxWidth: "400px",
+    maxWidth: "430px",
   },
 }));
 

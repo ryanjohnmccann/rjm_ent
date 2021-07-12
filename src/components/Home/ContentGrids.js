@@ -8,12 +8,12 @@ import contentCards from "./create-content-cards.js";
 // Handles styling
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
-    height: "650px",
+    height: "690px",
     overflowY: "auto",
     overflowX: "hidden",
   },
   gridItem: {
-    paddingBottom: "10px"
+    paddingBottom: "10px",
   },
 }));
 
@@ -34,7 +34,7 @@ export default function ContentGrids() {
       {contentGrids.map((obj, index) => (
         <Grid
           container
-          spacing={1}
+          spacing={2}
           align="center"
           justifyContent="flex-start"
           direction="row"
@@ -42,7 +42,14 @@ export default function ContentGrids() {
           className={classes.gridContainer}
         >
           {contentCards[index].map((obj2) => (
-            <Grid sm={6} md={6} lg={4} item key={obj2.gridKey} className={classes.gridItem}>
+            <Grid
+              sm={6}
+              md={6}
+              lg={4}
+              item
+              key={obj2.gridKey}
+              className={classes.gridItem}
+            >
               <ContentCard1
                 key={obj2.contentKey}
                 alt={obj2.alt}
