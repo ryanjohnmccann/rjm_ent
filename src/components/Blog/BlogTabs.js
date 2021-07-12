@@ -80,27 +80,27 @@ export default function BlogTabs() {
             aria-label="scrollable auto tabs example"
           >
             <Tab
-              label="Show One"
+              label="Blog One"
               {...a11yProps(0)}
               style={{ color: "black" }}
             />
             <Tab
-              label="Show Two"
+              label="Blog Two"
               {...a11yProps(1)}
               style={{ color: "black" }}
             />
             <Tab
-              label="Show Three"
+              label="Blog Three"
               {...a11yProps(2)}
               style={{ color: "black" }}
             />
             <Tab
-              label="Show Four"
+              label="Blog Four"
               {...a11yProps(3)}
               style={{ color: "black" }}
             />
             <Tab
-              label="Show Five"
+              label="Blog Five"
               {...a11yProps(4)}
               style={{ color: "black" }}
             />

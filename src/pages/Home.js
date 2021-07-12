@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import Grid from "@material-ui/core/Grid";
 import SlideShow from "../components/Home/SlideShow";
 import Explore from "../components/Home/Explore";

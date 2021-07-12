@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
@@ -14,32 +14,83 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ExploreCategories() {
   const classes = useStyles();
-  function createCategories(text, color, chipKey, gridKey) {
-    return { text, color, chipKey, gridKey };
+  const [allButton, setAllButton] = useState(true);
+  const [showButton, setShowButton] = useState(false);
+  const [blogButton, setBlogButton] = useState(false);
+  function createCategories(
+    text,
+    color,
+    backgroundColor,
+    chipKey,
+    gridKey,
+    activeBool,
+    activeColor,
+    activeBackground
+  ) {
+    return {
+      text,
+      color,
+      backgroundColor,
+      chipKey,
+      gridKey,
+      activeBool,
+      activeColor,
+      activeBackground,
+    };
   }
   const categories = [
     createCategories(
       "All",
       "#1D2EFF",
+      "white",
       "allChipCategory",
-      "allChipCategoryGridItem"
+      "allChipCategoryGridItem",
+      allButton,
+      "white",
+      "#1D2EFF"
     ),
     createCategories(
       "Show",
       "#8c1aff",
+      "white",
       "showChipCategory",
-      "showChipCategoryGridItem"
+      "showChipCategoryGridItem",
+      showButton,
+      "white",
+      "#8c1aff"
     ),
     createCategories(
       "Blog",
       "#C30101",
+      "white",
       "blogChipCategory",
-      "blogChipCategoryGridItem"
+      "blogChipCategoryGridItem",
+      blogButton,
+      "white",
+      "#C30101"
     ),
   ];
 
   // Will come back to this function in the future
-  function handleChipClick() {}
+  const chipClickHandler = (event) => {
+    const desButton = event.target.innerText;
+    console.log(event);
+    if (desButton === "All") {
+      setAllButton(true);
+      setShowButton(false);
+      setBlogButton(false);
+    }
+    if (desButton === "Show") {
+      setShowButton(true);
+      setAllButton(false);
+      setBlogButton(false);
+    }
+    if (desButton === "Blog") {
+      setBlogButton(true);
+      setAllButton(false);
+      setShowButton(false);
+    }
+  };
 
   return (
     <Grid className={classes.chipsGrid} container spacing={2}>
@@ -48,13 +99,16 @@ export default function ExploreCategories() {
           <Chip
             label={obj.text}
             key={obj.chipKey}
-            onClick={handleChipClick}
-            variant="outlined"
+            onClick={chipClickHandler}
+            variant={obj.activeBool ? "default" : "outlined"}
             style={{
-              color: obj.color,
+              color: obj.activeBool ? obj.activeColor : obj.color,
               width: "120px",
               fontSize: "18px",
               borderColor: obj.color,
+              backgroundColor: obj.activeBool
+                ? obj.activeBackground
+                : obj.backgroundColor,
             }}
           />
         </Grid>

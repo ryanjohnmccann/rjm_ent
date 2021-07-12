@@ -9574,6 +9574,11 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
 
+"react-fastclick@^3.0.2":
+  "integrity" "sha1-KZTGAIjNqQsLLL+sS258a8c9ajo="
+  "resolved" "https://registry.npmjs.org/react-fastclick/-/react-fastclick-3.0.2.tgz"
+  "version" "3.0.2"
+
 "react-intersection-observer@^8.32.0":
   "integrity" "sha512-RlC6FvS3MFShxTn4FHAy904bVjX5Nn4/eTjUkurW0fHK+M/fyQdXuyCy9+L7yjA+YMGogzzSJNc7M4UtfSKvtw=="
   "resolved" "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-8.32.0.tgz"
