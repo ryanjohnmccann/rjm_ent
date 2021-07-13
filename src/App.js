@@ -4,7 +4,7 @@ import ButtonAppBar from "./components/UI/ButtonAppBar/ButtonAppBar";
 import Divider from "@material-ui/core/Divider";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/UI/Footer/Footer";
@@ -24,8 +24,8 @@ function App() {
         <Route path="/shows" exact>
           <Shows />
         </Route>
-        <Route path="/blog" exact>
-          <Blog />
+        <Route path="/blogs" exact>
+          <Blogs />
         </Route>
         <Route path="/about" exact>
           <About />

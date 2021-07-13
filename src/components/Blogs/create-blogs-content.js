@@ -1,10 +1,10 @@
-import Show1 from "../../assets/Shows/Show1.jpg";
-import Show2 from "../../assets/Shows/Show2.jpg";
-import Show3 from "../../assets/Shows/Show3.jpg";
+import Blog1 from "../../assets/Blogs/Blog1.jpg";
+import Blog2 from "../../assets/Blogs/Blog2.jpg";
+import Blog3 from "../../assets/Blogs/Blog3.jpg";
 
 const colorArr = ["#8c1aff", "#C30101", "#1D2EFF", "#00B30B", "#EF5E00"];
 
-function createShowContent(
+function createBlogContent(
   alt,
   image,
   title,
@@ -30,59 +30,59 @@ function createShowContent(
   };
 }
 
-const showsContent = [
+const blogsContent = [
   [
-    createShowContent(
+    createBlogContent(
       "Random alt",
-      Show1,
+      Blog1,
       "Random Title",
-      colorArr[0],
-      "Random Show Category",
+      colorArr[3],
+      "Random Blog Category",
       "Random Title",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
       "April 20, 1999",
-      "Show1Key1",
-      "Show1GridKey1"
+      "Blog1Key1",
+      "Blog1GridKey1"
     ),
-    createShowContent(
+    createBlogContent(
       "Random alt",
-      Show2,
+      Blog2,
       "Random Title",
-      colorArr[1],
-      "Random Show Category",
+      colorArr[2],
+      "Random Blog Category",
       "Random Title",
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do...",
       "April 20, 1999",
-      "Show2Key2",
-      "Show2GridKey1"
+      "Blog2Key2",
+      "Blog2GridKey1"
     ),
-    createShowContent(
+    createBlogContent(
       "Random alt",
-      Show3,
+      Blog3,
       "Random Title",
-      colorArr[2],
-      "Random Show Category",
+      colorArr[1],
+      "Random Blog Category",
       "Random Title",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
-      "Show3Key3",
-      "Show3GridKey1"
+      "Blog3Key3",
+      "Blog3GridKey1"
     ),
   ],
   [
-    createShowContent(
+    createBlogContent(
       "Random alt",
-      Show3,
+      Blog3,
       "Random Title",
-      colorArr[3],
-      "Random Show Category",
+      colorArr[0],
+      "Random Blog Category",
       "Random Title",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
-      "Show4Key4",
-      "Show4GridKey2"
+      "Blog4Key4",
+      "Blog4GridKey2"
     ),
   ],
 ];
 
-export default showsContent;
+export default blogsContent;

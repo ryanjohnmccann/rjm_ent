@@ -46,7 +46,7 @@ const aboutContentCards = [
     "280px"
   ),
   createAboutContentCard(
-    About2,
+    About1,
     "Kyle Ayer",
     "Chief Product Officer",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur.",

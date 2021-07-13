@@ -30,7 +30,7 @@ export default function NavBarList(props) {
   const listItems = [
     createListItems("Home", <HomeIcon />, "/home"),
     createListItems("Shows", <TvIcon />, "/shows"),
-    createListItems("Blog", <CreateIcon />, "/blog"),
+    createListItems("Blogs", <CreateIcon />, "/blogs"),
     createListItems("About", <InfoIcon />, "/about"),
     createListItems("Contact", <ContactMailIcon />, "/contact"),
   ];

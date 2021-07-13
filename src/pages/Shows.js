@@ -3,12 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { Fade } from "react-awesome-reveal";
-import ShowTabs from "../components/Shows/ShowTabs";
+import ShowsContent from "../components/Shows/ShowsContent";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
+  root: {},
   header: {
     marginLeft: "3vw",
     marginTop: "2vh",
@@ -51,7 +50,7 @@ export default function Shows() {
         </Grid>
         <Grid item container align="center" justify="center">
           <Fade triggerOnce delay={600}>
-            <ShowTabs />
+            <ShowsContent />
           </Fade>
         </Grid>
       </Grid>

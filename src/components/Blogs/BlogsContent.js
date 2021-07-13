@@ -1,60 +1,77 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import ContentCard1 from "../UI/ContentCards/ContentCard1";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
-import ContentCard2 from "../UI/ContentCards/ContentCard2";
-import blogContent from "./create-blog-content";
+import blogsContent from "./create-blogs-content.js";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
-  rootBox: {},
+  rootBox: {
+    marginTop: "20px",
+    [theme.breakpoints.up("lg")]: {
+      width: "1350px",
+    },
+  },
   childBox: {
-    height: "361px",
+    height: "340px",
+    [theme.breakpoints.down("sm")]: {
+      height: "600px",
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      width: "900px",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      width: "1150px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: "1350px",
+    },
     overflowY: "auto",
     overflowX: "hidden",
   },
-  blogGrid: {
+  blogsGrid: {
     justifyContent: "flex-start",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      justifyContent: "center",
+    },
+    [theme.breakpoints.up("lg")]: {
+      justifyContent: "flex-start",
     },
     alignContent: "center",
   },
 }));
 
-export default function BlogContent(props) {
+export default function BlogsContent(props) {
   const classes = useStyles();
-  function createShowGrid(gridKey, boxKey, loc) {
-    return { gridKey, boxKey, loc };
+  function createBlogGrid(gridKey, boxKey) {
+    return { gridKey, boxKey };
   }
 
-  const showGrids = [
-    [
-      createShowGrid("randomBlogGridKey1", "randomBoxKeyBlog1", 0),
-      createShowGrid("randomBlogGridKey1-2", "randomBoxKeyBlog1-2", 0),
-    ],
-    [createShowGrid("randomBlogGridKey2", "randomBoxKeyBlog2", 1)],
-    [createShowGrid("randomBlogGridKey3", "randomBoxKeyBlog3", 2)],
-    [createShowGrid("randomBlogGridKey4", "randomBoxKeyBlog4", 3)],
-    [createShowGrid("randomBlogGridKey5", "randomBoxKeyBlog5", 4)],
+  const blogGrids = [
+    createBlogGrid("randomBlogGridKey1", "randomBoxKeyBlogs1"),
+    createBlogGrid("randomBlogGridKey2", "randomBoxKeyBlogs2"),
   ];
 
   return (
     <Box component="div" className={classes.rootBox}>
       <Carousel autoPlay={false} animation="slide">
-        {showGrids[props.desIndex].map((obj, index) => (
+        {blogGrids.map((obj, index) => (
           <Box component="div" key={obj.boxKey} className={classes.childBox}>
             <Grid
               container
               spacing={2}
               direction="row"
               key={obj.gridKey}
-              className={classes.blogGrid}
+              className={classes.blogsGrid}
             >
-              {blogContent[obj.loc][index].map((obj2) => (
+              {blogsContent[index].map((obj2) => (
                 <Grid item key={obj2.gridKey} sm={5} lg={4}>
-                  <ContentCard2
+                  <ContentCard1
                     alt={obj2.alt}
                     image={obj2.image}
                     title={obj2.title}
@@ -62,7 +79,6 @@ export default function BlogContent(props) {
                     category={obj2.category}
                     mainTitle={obj2.mainTitle}
                     body={obj2.body}
-                    date={obj2.date}
                     key={obj2.contentKey}
                   />
                 </Grid>
