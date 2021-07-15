@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
 import AboutContent from "../components/About/AboutContent";
-import { Fade } from "react-awesome-reveal";
+import Fade from "@material-ui/core/Fade";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -43,10 +43,10 @@ export default function About() {
   return (
     <div>
       <Box className={classes.root}>
-        <Fade triggerOnce delay={200}>
+        <Fade in={true} timeout={1000}>
           <Typography variant="h2">About</Typography>
         </Fade>
-        <Fade triggerOnce delay={400}>
+        <Fade in={true} timeout={1200}>
           <Typography
             className={classes.aboutDetails}
             color="textSecondary"
@@ -67,8 +67,10 @@ export default function About() {
           </Typography>
         </Fade>
         <Box className={classes.secondaryHeader}>
-          <Fade triggerOnce delay={550}>
+          <Fade in={true} timeout={1400}>
             <Typography variant="h3">Our Team</Typography>
+          </Fade>
+          <Fade in={true} timeout={1600}>
             <Divider
               className={classes.divider}
               classes={{ root: classes.divider }}
@@ -83,9 +85,7 @@ export default function About() {
         align="center"
       >
         <Grid item>
-          <Fade triggerOnce delay={600}>
-            <AboutContent />
-          </Fade>
+          <AboutContent />
         </Grid>
       </Grid>
     </div>

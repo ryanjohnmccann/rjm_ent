@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import { Fade } from "react-awesome-reveal";
-import BlogTabs from "../components/Blog/BlogTabs";
+import Fade from "@material-ui/core/Fade";
+import BlogsContent from "../components/Blogs/BlogsContent";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -12,24 +12,24 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "3vw",
     marginTop: "2vh",
   },
-  blogDetails: {
+  blogsDetails: {
     maxWidth: "90%",
     paddingTop: "2vh",
   },
 }));
 
-export default function Blog() {
+export default function Blogs() {
   const classes = useStyles();
   return (
     <div>
       <Grid container className={classes.root}>
         <Grid item className={classes.header}>
-          <Fade triggerOnce delay={200}>
-            <Typography variant="h2">Blog</Typography>
+          <Fade in={true} timeout={1000}>
+            <Typography variant="h2">Blogs</Typography>
           </Fade>
-          <Fade triggerOnce delay={400}>
+          <Fade in={true} timeout={1200}>
             <Typography
-              className={classes.blogDetails}
+              className={classes.blogsDetails}
               color="textSecondary"
               variant="subtitle1"
               component="p"
@@ -49,9 +49,7 @@ export default function Blog() {
           </Fade>
         </Grid>
         <Grid item container align="center" justify="center">
-          <Fade triggerOnce delay={600}>
-            <BlogTabs />
-          </Fade>
+          <BlogsContent />
         </Grid>
       </Grid>
     </div>

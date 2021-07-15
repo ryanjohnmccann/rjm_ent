@@ -4,13 +4,18 @@ import ButtonAppBar from "./components/UI/ButtonAppBar/ButtonAppBar";
 import Divider from "@material-ui/core/Divider";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
+import IndividualBlog from "./pages/IndividualBlog";
+import IndividualShow from "./pages/IndividualShow";
+import WatchShow from "./pages/WatchShow";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/UI/Footer/Footer";
-import { Fade } from "react-awesome-reveal";
+import Cookies from "universal-cookie";
 
 function App() {
+  const cookies = new Cookies();
+  cookies.set({ secure: true, sameSite: "none" });
   return (
     <div>
       <ButtonAppBar />
@@ -24,8 +29,17 @@ function App() {
         <Route path="/shows" exact>
           <Shows />
         </Route>
-        <Route path="/blog" exact>
-          <Blog />
+        <Route path="/shows/:showID" exact>
+          <IndividualShow />
+        </Route>
+        <Route path="/shows/watch/:watchShowID" exact>
+          <WatchShow />
+        </Route>
+        <Route path="/blogs" exact>
+          <Blogs />
+        </Route>
+        <Route path="/blogs/:blogID" exact>
+          <IndividualBlog />
         </Route>
         <Route path="/about" exact>
           <About />
@@ -38,9 +52,7 @@ function App() {
         </Route>
       </Switch>
       <Divider style={{ marginTop: "6vh" }} />
-      <Fade triggerOnce delay={200} fraction={0.4}>
-        <Footer />
-      </Fade>
+      <Footer />
     </div>
   );
 }

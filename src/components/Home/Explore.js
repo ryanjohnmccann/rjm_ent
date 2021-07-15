@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import ExploreCategories from "./ExploreCategories";
-import { Slide } from "react-awesome-reveal";
+import Grow from "@material-ui/core/Grow";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -13,11 +13,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Explore() {
+export default function Explore(props) {
   const classes = useStyles();
+  const categoryHandler = (event) => {
+    props.categoryClicked(event);
+  };
   return (
     <React.Fragment>
-      <Slide cascade triggerOnce delay={550}>
+      <Grow in={true} timeout={2200}>
         <Typography
           variant="h3"
           component="h1"
@@ -25,10 +28,8 @@ export default function Explore() {
         >
           Explore
         </Typography>
-      </Slide>
-      <Slide cascade triggerOnce fraction={0.3}>
-        <ExploreCategories />
-      </Slide>
+      </Grow>
+      <ExploreCategories categoryClicked={categoryHandler} />
       <Divider />
     </React.Fragment>
   );

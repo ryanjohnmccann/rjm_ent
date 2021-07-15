@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import ContentCard1 from "../UI/ContentCards/ContentCard1";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Carousel from "react-material-ui-carousel";
 import Grow from "@material-ui/core/Grow";
-import showsContent from "./create-shows-content.js";
+import Carousel from "react-material-ui-carousel";
+import blogsContent from "./create-blogs-content.js";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     overflowY: "auto",
     overflowX: "hidden",
   },
-  showsGrid: {
+  blogsGrid: {
     justifyContent: "flex-start",
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
@@ -47,30 +47,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ShowsContent(props) {
+export default function BlogsContent(props) {
   const classes = useStyles();
-  function createShowGrid(gridKey, boxKey) {
+  function createBlogGrid(gridKey, boxKey) {
     return { gridKey, boxKey };
   }
 
-  const showGrids = [
-    createShowGrid("randomShowGridKey1", "randomBoxKeyShows1"),
-    createShowGrid("randomShowGridKey2", "randomBoxKeyShows2"),
+  const blogGrids = [
+    createBlogGrid("randomBlogGridKey1", "randomBoxKeyBlogs1"),
+    createBlogGrid("randomBlogGridKey2", "randomBoxKeyBlogs2"),
   ];
 
   return (
     <Box component="div" className={classes.rootBox}>
       <Carousel autoPlay={false} animation="slide">
-        {showGrids.map((obj, index) => (
+        {blogGrids.map((obj, index) => (
           <Box component="div" key={obj.boxKey} className={classes.childBox}>
             <Grid
               container
               spacing={2}
               direction="row"
               key={obj.gridKey}
-              className={classes.showsGrid}
+              className={classes.blogsGrid}
             >
-              {showsContent[index].map((obj2) => (
+              {blogsContent[index].map((obj2) => (
                 <Grow in={true} timeout={500} key={obj2.growKey}>
                   <Grid item key={obj2.gridKey} sm={5} lg={4}>
                     <ContentCard1
