@@ -5,6 +5,7 @@ import About4 from "../../assets/About/About4.jpg";
 
 function createAboutContentCard(
   img,
+  growKey,
   name,
   position,
   summary,
@@ -12,11 +13,21 @@ function createAboutContentCard(
   aboutGridKey,
   summaryHeight
 ) {
-  return { img, name, position, summary, buttons, aboutGridKey, summaryHeight };
+  return {
+    img,
+    growKey,
+    name,
+    position,
+    summary,
+    buttons,
+    aboutGridKey,
+    summaryHeight,
+  };
 }
 const aboutContentCards = [
   createAboutContentCard(
     About1,
+    "Random Grow Key (About) 1",
     "Ryan McCann",
     "Founder and Chief Technology Officer",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur. Est in cupidatat culpa minim id ipsum labore do ad reprehenderit.",
@@ -47,6 +58,7 @@ const aboutContentCards = [
   ),
   createAboutContentCard(
     About1,
+    "Random Grow Key (About) 2",
     "Kyle Ayer",
     "Chief Product Officer",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur.",
@@ -67,6 +79,7 @@ const aboutContentCards = [
   ),
   createAboutContentCard(
     About4,
+    "Random Grow Key (About) 3",
     "Kristen Cyr",
     "Head of Quality Assurance",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur. Est in cupidatat.",
@@ -87,6 +100,7 @@ const aboutContentCards = [
   ),
   createAboutContentCard(
     About3,
+    "Random Grow Key (About) 4",
     "Kyran McCann",
     "Content Creator",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt.",
@@ -107,6 +121,7 @@ const aboutContentCards = [
   ),
   createAboutContentCard(
     About2,
+    "Random Grow Key (About) 5",
     "Priscila Garcia Oliver",
     "Content Creator",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore.",
@@ -127,6 +142,7 @@ const aboutContentCards = [
   ),
   createAboutContentCard(
     About1,
+    "Random Grow Key (About) 6",
     "Jack Flood",
     "Graphic Designer",
     "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla.",

@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Fade } from "react-awesome-reveal";
+import Fade from "@material-ui/core/Fade";
 import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpg";
 import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpg";
 import Image3 from "../../assets/Home/SlideShow/SlideShow3.jpg";
@@ -28,7 +28,7 @@ export default function Test(props) {
 function Item(props) {
   return (
     <React.Fragment>
-      <Fade>
+      <Fade in={true} timeout={1000}>
         <a
           href="https://www.google.com"
           target="_blank"

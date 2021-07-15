@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Chip from "@material-ui/core/Chip";
+import Grow from "@material-ui/core/Grow";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -12,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ExploreCategories() {
+export default function ExploreCategories(props) {
   const classes = useStyles();
   const [allButton, setAllButton] = useState(true);
   const [showButton, setShowButton] = useState(false);
@@ -71,10 +72,8 @@ export default function ExploreCategories() {
     ),
   ];
 
-  // Will come back to this function in the future
   const chipClickHandler = (event) => {
     const desButton = event.target.innerText;
-    console.log(event);
     if (desButton === "All") {
       setAllButton(true);
       setShowButton(false);
@@ -90,27 +89,30 @@ export default function ExploreCategories() {
       setAllButton(false);
       setShowButton(false);
     }
+    props.categoryClicked(desButton);
   };
 
   return (
     <Grid className={classes.chipsGrid} container spacing={2}>
       {categories.map((obj) => (
         <Grid item key={obj.gridKey}>
-          <Chip
-            label={obj.text}
-            key={obj.chipKey}
-            onClick={chipClickHandler}
-            variant={obj.activeBool ? "default" : "outlined"}
-            style={{
-              color: obj.activeBool ? obj.activeColor : obj.color,
-              width: "120px",
-              fontSize: "18px",
-              borderColor: obj.color,
-              backgroundColor: obj.activeBool
-                ? obj.activeBackground
-                : obj.backgroundColor,
-            }}
-          />
+          <Grow in={true} timeout={2600}>
+            <Chip
+              label={obj.text}
+              key={obj.chipKey}
+              onClick={chipClickHandler}
+              variant={obj.activeBool ? "default" : "outlined"}
+              style={{
+                color: obj.activeBool ? obj.activeColor : obj.color,
+                width: "120px",
+                fontSize: "18px",
+                borderColor: obj.color,
+                backgroundColor: obj.activeBool
+                  ? obj.activeBackground
+                  : obj.backgroundColor,
+              }}
+            />
+          </Grow>
         </Grid>
       ))}
     </Grid>

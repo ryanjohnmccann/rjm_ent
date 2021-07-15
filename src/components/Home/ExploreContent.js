@@ -1,13 +1,10 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
 import ContentGrids from "./ContentGrids";
 
-export default function ExploreContent() {
+export default function ExploreContent(props) {
   return (
     <React.Fragment>
-      <Slide cascade triggerOnce delay={550}>
-        <ContentGrids />
-      </Slide>
+      <ContentGrids currentCategory={props.currentCategory} />
     </React.Fragment>
   );
 }

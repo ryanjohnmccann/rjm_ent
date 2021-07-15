@@ -4,7 +4,7 @@ export default function ContactForm() {
   return (
     <div className={styles.container}>
       <form>
-        <label for="fname" className={styles.random}>
+        <label htmlFor="fname" className={styles.random}>
           First Name
         </label>
         <input
@@ -13,7 +13,7 @@ export default function ContactForm() {
           name="firstname"
           placeholder="Your name"
         />
-        <label className={styles.random} for="lname">
+        <label className={styles.random} htmlFor="lname">
           Last Name
         </label>
         <input
@@ -23,7 +23,7 @@ export default function ContactForm() {
           name="lastname"
           placeholder="Your last name"
         />
-        <label className={styles.random} for="email">
+        <label className={styles.random} htmlFor="email">
           Email
         </label>
         <input
@@ -33,7 +33,7 @@ export default function ContactForm() {
           name="email"
           placeholder="Your email"
         />
-        <label className={styles.random} for="message">
+        <label className={styles.random} htmlFor="message">
           Message
         </label>
         <textarea

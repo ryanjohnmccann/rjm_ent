@@ -7,6 +7,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import Fade from "@material-ui/core/Fade";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -59,16 +60,17 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Footer() {
   const classes = useStyles();
-  function createLink(href, underline, color, text, linkKey, gridKey) {
-    return { href, underline, color, text, linkKey, gridKey };
+  function createLink(href, fadeKey, underline, color, text, linkKey, gridKey) {
+    return { href, fadeKey, underline, color, text, linkKey, gridKey };
   }
 
-  function createIcon(href, icon, linkKey, gridKey, className) {
-    return { href, icon, linkKey, gridKey, className };
+  function createIcon(href, fadeKey, icon, linkKey, gridKey, className) {
+    return { href, fadeKey, icon, linkKey, gridKey, className };
   }
   const links = [
     createLink(
       "/about",
+      "Random Effect Key (Footer) 1",
       "none",
       "inherit",
       "About",
@@ -77,6 +79,7 @@ export default function Footer() {
     ),
     createLink(
       "/contact",
+      "Random Effect Key (Footer) 2",
       "none",
       "inherit",
       "Contact",
@@ -87,6 +90,7 @@ export default function Footer() {
   const icons = [
     createIcon(
       "https://www.facebook.com",
+      "Random Effect Key (Footer) 3",
       <FacebookIcon style={{ fontSize: "50px" }} />,
       "footFaceBook",
       "faceBookGrid",
@@ -94,6 +98,7 @@ export default function Footer() {
     ),
     createIcon(
       "https://www.instagram.com",
+      "Random Effect Key (Footer) 4",
       <InstagramIcon style={{ fontSize: "50px" }} />,
       "footInstagram",
       "instagramGrid",
@@ -101,6 +106,7 @@ export default function Footer() {
     ),
     createIcon(
       "https://www.youtube.com",
+      "Random Effect Key (Footer) 5",
       <YouTubeIcon style={{ fontSize: "50px" }} />,
       "footYouTube",
       "youTubeGrid",
@@ -108,6 +114,7 @@ export default function Footer() {
     ),
     createIcon(
       "https://www.twitter.com",
+      "Random Effect Key (Footer) 6",
       <TwitterIcon style={{ fontSize: "50px" }} />,
       "footFaceBook",
       "twitterGrid",
@@ -119,34 +126,40 @@ export default function Footer() {
       <Box px={{ xs: 10, sm: 10 }} py={{ xs: 10, sm: 10 }}>
         <Grid container spacing={10} className={classes.mainGrid}>
           {links.map((obj) => (
-            <Grid item key={obj.gridKey} style={{ paddingTop: "48.5px" }}>
-              <Link
-                href={obj.href}
-                underline={obj.underline}
-                color={obj.color}
-                className={classes.links}
-                key={obj.linkKey}
-              >
-                {obj.text}
-              </Link>
-            </Grid>
+            <Fade in={true} timeout={2000} key={obj.fadeKey}>
+              <Grid item key={obj.gridKey} style={{ paddingTop: "48.5px" }}>
+                <Link
+                  href={obj.href}
+                  underline={obj.underline}
+                  color={obj.color}
+                  className={classes.links}
+                  key={obj.linkKey}
+                >
+                  {obj.text}
+                </Link>
+              </Grid>
+            </Fade>
           ))}
           {icons.map((obj) => (
-            <Grid item key={obj.gridKey}>
-              <Link
-                href={obj.href}
-                className={obj.className}
-                key={obj.linkKey}
-                target="_blank"
-              >
-                {obj.icon}
-              </Link>
-            </Grid>
+            <Fade in={true} timeout={2000} key={obj.fadeKey}>
+              <Grid item key={obj.gridKey}>
+                <Link
+                  href={obj.href}
+                  className={obj.className}
+                  key={obj.linkKey}
+                  target="_blank"
+                >
+                  {obj.icon}
+                </Link>
+              </Grid>
+            </Fade>
           ))}
         </Grid>
-        <Box className={classes.rights}>
-          &copy; 2021 - All rights reserved RJM Entertainment
-        </Box>
+        <Fade in={true} timeout={2000}>
+          <Box className={classes.rights}>
+            &copy; 2021 - All rights reserved RJM Entertainment
+          </Box>
+        </Fade>
       </Box>
     </footer>
   );

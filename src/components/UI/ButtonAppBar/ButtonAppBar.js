@@ -62,6 +62,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: "white",
+    textDecoration: "none",
   },
 }));
 
@@ -98,7 +100,12 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography
+            variant="h6"
+            className={classes.title}
+            component="a"
+            href="https://www.google.com"
+          >
             RJM Entertainment
           </Typography>
           <div className={classes.search}>

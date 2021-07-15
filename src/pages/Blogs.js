@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import { Fade } from "react-awesome-reveal";
+import Fade from "@material-ui/core/Fade";
 import BlogsContent from "../components/Blogs/BlogsContent";
 
 // Handles styling
@@ -24,10 +24,10 @@ export default function Blogs() {
     <div>
       <Grid container className={classes.root}>
         <Grid item className={classes.header}>
-          <Fade triggerOnce delay={200}>
+          <Fade in={true} timeout={1400}>
             <Typography variant="h2">Blogs</Typography>
           </Fade>
-          <Fade triggerOnce delay={400}>
+          <Fade in={true} timeout={2000}>
             <Typography
               className={classes.blogsDetails}
               color="textSecondary"
@@ -49,9 +49,7 @@ export default function Blogs() {
           </Fade>
         </Grid>
         <Grid item container align="center" justify="center">
-          <Fade triggerOnce delay={600}>
-            <BlogsContent />
-          </Fade>
+          <BlogsContent />
         </Grid>
       </Grid>
     </div>

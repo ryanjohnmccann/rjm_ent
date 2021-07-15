@@ -6,6 +6,7 @@ const colorArr = ["#8c1aff", "#C30101", "#1D2EFF", "#00B30B", "#EF5E00"];
 
 function createBlogContent(
   alt,
+  growKey,
   image,
   title,
   categoryColor,
@@ -18,6 +19,7 @@ function createBlogContent(
 ) {
   return {
     alt,
+    growKey,
     image,
     title,
     categoryColor,
@@ -34,6 +36,7 @@ const blogsContent = [
   [
     createBlogContent(
       "Random alt",
+      "Random Effect Key (Blogs) 1",
       Blog1,
       "Random Title",
       colorArr[3],
@@ -46,6 +49,7 @@ const blogsContent = [
     ),
     createBlogContent(
       "Random alt",
+      "Random Effect Key (Shows) 2",
       Blog2,
       "Random Title",
       colorArr[2],
@@ -58,6 +62,7 @@ const blogsContent = [
     ),
     createBlogContent(
       "Random alt",
+      "Random Effect Key (Shows) 3",
       Blog3,
       "Random Title",
       colorArr[1],
@@ -72,6 +77,7 @@ const blogsContent = [
   [
     createBlogContent(
       "Random alt",
+      "Random Effect Key (Shows) 4",
       Blog3,
       "Random Title",
       colorArr[0],

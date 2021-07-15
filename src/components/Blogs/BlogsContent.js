@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ContentCard1 from "../UI/ContentCards/ContentCard1";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Grow from "@material-ui/core/Grow";
 import Carousel from "react-material-ui-carousel";
 import blogsContent from "./create-blogs-content.js";
 
@@ -70,18 +71,20 @@ export default function BlogsContent(props) {
               className={classes.blogsGrid}
             >
               {blogsContent[index].map((obj2) => (
-                <Grid item key={obj2.gridKey} sm={5} lg={4}>
-                  <ContentCard1
-                    alt={obj2.alt}
-                    image={obj2.image}
-                    title={obj2.title}
-                    categoryColor={obj2.categoryColor}
-                    category={obj2.category}
-                    mainTitle={obj2.mainTitle}
-                    body={obj2.body}
-                    key={obj2.contentKey}
-                  />
-                </Grid>
+                <Grow in={true} timeout={500} key={obj2.growKey}>
+                  <Grid item key={obj2.gridKey} sm={5} lg={4}>
+                    <ContentCard1
+                      alt={obj2.alt}
+                      image={obj2.image}
+                      title={obj2.title}
+                      categoryColor={obj2.categoryColor}
+                      category={obj2.category}
+                      mainTitle={obj2.mainTitle}
+                      body={obj2.body}
+                      key={obj2.contentKey}
+                    />
+                  </Grid>
+                </Grow>
               ))}
             </Grid>
           </Box>

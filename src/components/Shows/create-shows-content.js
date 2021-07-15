@@ -6,6 +6,7 @@ const colorArr = ["#8c1aff", "#C30101", "#1D2EFF", "#00B30B", "#EF5E00"];
 
 function createShowContent(
   alt,
+  growKey,
   image,
   title,
   categoryColor,
@@ -18,6 +19,7 @@ function createShowContent(
 ) {
   return {
     alt,
+    growKey,
     image,
     title,
     categoryColor,
@@ -34,6 +36,7 @@ const showsContent = [
   [
     createShowContent(
       "Random alt",
+      "Random Effect Key (Shows) 1",
       Show1,
       "Random Title",
       colorArr[0],
@@ -46,6 +49,7 @@ const showsContent = [
     ),
     createShowContent(
       "Random alt",
+      "Random Effect Key (Shows) 2",
       Show2,
       "Random Title",
       colorArr[1],
@@ -58,6 +62,7 @@ const showsContent = [
     ),
     createShowContent(
       "Random alt",
+      "Random Effect Key (Shows) 3",
       Show3,
       "Random Title",
       colorArr[2],
@@ -72,6 +77,7 @@ const showsContent = [
   [
     createShowContent(
       "Random alt",
+      "Random Effect Key (Shows) 4",
       Show3,
       "Random Title",
       colorArr[3],

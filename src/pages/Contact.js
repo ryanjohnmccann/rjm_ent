@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import ContactLinks from "../components/Contact/ContactLinks.js";
 import ContactForm from "../components/Contact/ContactForm.js";
-import { Fade } from "react-awesome-reveal";
+import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,10 +28,10 @@ export default function Contact() {
   return (
     <div>
       <Box className={classes.root}>
-        <Fade triggerOnce delay={200}>
+        <Fade in={true} timeout={1400}>
           <Typography variant="h2">Contact</Typography>
         </Fade>
-        <Fade triggerOnce delay={400}>
+        <Fade in={true} timeout={2000}>
           <Typography
             className={classes.contactDetails}
             color="textSecondary"
@@ -52,22 +52,21 @@ export default function Contact() {
           </Typography>
         </Fade>
       </Box>
-      <Fade triggerOnce delay={600}>
+      <Fade in={true} timeout={2400}>
         <Divider />
-        <Grid
-          container
-          spacing={3}
-          className={classes.linkGrid}
-          justify="center"
-        >
+      </Fade>
+      <Grid container spacing={3} className={classes.linkGrid} justify="center">
+        <Fade in={true} timeout={2400}>
           <Grid item>
             <ContactLinks />
           </Grid>
+        </Fade>
+        <Fade in={true} timeout={2400}>
           <Grid item>
             <ContactForm />
           </Grid>
-        </Grid>
-      </Fade>
+        </Fade>
+      </Grid>
     </div>
   );
 }
