@@ -24,10 +24,10 @@ export default function Shows() {
     <div>
       <Grid container className={classes.root}>
         <Grid item className={classes.header}>
-          <Fade in={true} timeout={1400}>
+          <Fade in={true} timeout={1000}>
             <Typography variant="h2">Shows</Typography>
           </Fade>
-          <Fade in={true} timeout={2000}>
+          <Fade in={true} timeout={1200}>
             <Typography
               className={classes.showsDetails}
               color="textSecondary"

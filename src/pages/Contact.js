@@ -7,6 +7,7 @@ import Divider from "@material-ui/core/Divider";
 import ContactLinks from "../components/Contact/ContactLinks.js";
 import ContactForm from "../components/Contact/ContactForm.js";
 import Fade from "@material-ui/core/Fade";
+import Grow from "@material-ui/core/Grow";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,10 +29,10 @@ export default function Contact() {
   return (
     <div>
       <Box className={classes.root}>
-        <Fade in={true} timeout={1400}>
+        <Fade in={true} timeout={1000}>
           <Typography variant="h2">Contact</Typography>
         </Fade>
-        <Fade in={true} timeout={2000}>
+        <Fade in={true} timeout={1200}>
           <Typography
             className={classes.contactDetails}
             color="textSecondary"
@@ -52,20 +53,20 @@ export default function Contact() {
           </Typography>
         </Fade>
       </Box>
-      <Fade in={true} timeout={2400}>
+      <Fade in={true} timeout={1400}>
         <Divider />
       </Fade>
       <Grid container spacing={3} className={classes.linkGrid} justify="center">
-        <Fade in={true} timeout={2400}>
+        <Grow in={true} timeout={1800}>
           <Grid item>
             <ContactLinks />
           </Grid>
-        </Fade>
-        <Fade in={true} timeout={2400}>
+        </Grow>
+        <Grow in={true} timeout={1800}>
           <Grid item>
             <ContactForm />
           </Grid>
-        </Fade>
+        </Grow>
       </Grid>
     </div>
   );

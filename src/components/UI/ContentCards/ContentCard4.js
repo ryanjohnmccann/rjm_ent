@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   details: {
     fontWeight: "bold",
     color: "white",
-    fontSize: "16.5px",
+    fontSize: "16.3px",
   },
   date: {
     paddingTop: "10px",

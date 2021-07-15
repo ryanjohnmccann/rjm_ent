@@ -8,7 +8,7 @@ export default function AboutContent() {
   return (
     <Grid container spacing={3} justify="center" align="center">
       {aboutContentCards.map((obj) => (
-        <Grow in={true} timeout={2000} key={obj.growKey}>
+        <Grow in={true} timeout={1800} key={obj.growKey}>
           <Grid item key={obj.aboutGridKey}>
             <ContentCard3
               img={obj.img}

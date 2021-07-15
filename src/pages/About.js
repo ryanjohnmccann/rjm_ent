@@ -43,10 +43,10 @@ export default function About() {
   return (
     <div>
       <Box className={classes.root}>
-        <Fade in={true} timeout={1400}>
+        <Fade in={true} timeout={1000}>
           <Typography variant="h2">About</Typography>
         </Fade>
-        <Fade in={true} timeout={2000}>
+        <Fade in={true} timeout={1200}>
           <Typography
             className={classes.aboutDetails}
             color="textSecondary"
@@ -67,10 +67,10 @@ export default function About() {
           </Typography>
         </Fade>
         <Box className={classes.secondaryHeader}>
-          <Fade in={true} timeout={2600}>
+          <Fade in={true} timeout={1400}>
             <Typography variant="h3">Our Team</Typography>
           </Fade>
-          <Fade in={true} timeout={3000}>
+          <Fade in={true} timeout={1600}>
             <Divider
               className={classes.divider}
               classes={{ root: classes.divider }}
