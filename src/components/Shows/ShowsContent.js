@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
 import Grow from "@material-ui/core/Grow";
-import showsContent from "./create-shows-content.js";
+import showsContent from "../../data/Shows/create-shows-content-data.js";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import individualShowData from "../components/Shows/individual-show-data";
+import individualShowData from "../data/IndividualShow/individual-show-data.js";
 
 export default function IndividualBlog() {
   const params = useParams();

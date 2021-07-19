@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Grow from "@material-ui/core/Grow";
 import ContentCard3 from "../UI/ContentCards/ContentCard3";
-import aboutContentCards from "./create-about-content";
+import aboutContentCards from "../../data/About/create-about-data";
 
 export default function AboutContent() {
   return (
