@@ -15,7 +15,10 @@ function createShowContent(
   body,
   date,
   contentKey,
-  gridKey
+  gridKey,
+  pageID,
+  isBlog = false,
+  isWatch = false
 ) {
   return {
     alt,
@@ -29,6 +32,9 @@ function createShowContent(
     date,
     contentKey,
     gridKey,
+    pageID,
+    isBlog,
+    isWatch,
   };
 }
 
@@ -45,7 +51,8 @@ const showsContent = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
       "April 20, 1999",
       "Show1Key1",
-      "Show1GridKey1"
+      "Show1GridKey1",
+      "random-show-id-1"
     ),
     createShowContent(
       "Random alt",
@@ -58,7 +65,8 @@ const showsContent = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do...",
       "April 20, 1999",
       "Show2Key2",
-      "Show2GridKey1"
+      "Show2GridKey1",
+      "random-show-id-2"
     ),
     createShowContent(
       "Random alt",
@@ -71,7 +79,8 @@ const showsContent = [
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
       "Show3Key3",
-      "Show3GridKey1"
+      "Show3GridKey1",
+      "random-show-id-3"
     ),
   ],
   [
@@ -86,7 +95,8 @@ const showsContent = [
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
       "Show4Key4",
-      "Show4GridKey2"
+      "Show4GridKey2",
+      "random-show-id-4"
     ),
   ],
 ];

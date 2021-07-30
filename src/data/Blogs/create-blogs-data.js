@@ -15,7 +15,8 @@ function createBlogContent(
   body,
   date,
   contentKey,
-  gridKey
+  gridKey,
+  pageID,
 ) {
   return {
     alt,
@@ -29,6 +30,7 @@ function createBlogContent(
     date,
     contentKey,
     gridKey,
+    pageID,
   };
 }
 
@@ -45,7 +47,8 @@ const blogsContent = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
       "April 20, 1999",
       "Blog1Key1",
-      "Blog1GridKey1"
+      "Blog1GridKey1",
+      "random-blog-id-1",
     ),
     createBlogContent(
       "Random alt",
@@ -58,7 +61,8 @@ const blogsContent = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do...",
       "April 20, 1999",
       "Blog2Key2",
-      "Blog2GridKey1"
+      "Blog2GridKey1",
+      "random-blog-id-2",
     ),
     createBlogContent(
       "Random alt",
@@ -71,7 +75,8 @@ const blogsContent = [
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
       "Blog3Key3",
-      "Blog3GridKey1"
+      "Blog3GridKey1",
+      "random-blog-id-3",
     ),
   ],
   [
@@ -86,7 +91,8 @@ const blogsContent = [
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
       "April 20, 1999",
       "Blog4Key4",
-      "Blog4GridKey2"
+      "Blog4GridKey2",
+      "random-blog-id-4",
     ),
   ],
 ];

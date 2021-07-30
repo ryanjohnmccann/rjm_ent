@@ -82,6 +82,10 @@ export default function BlogsContent(props) {
                       mainTitle={obj2.mainTitle}
                       body={obj2.body}
                       key={obj2.contentKey}
+                      isWatch={false}
+                      isShow={false}
+                      isBlogExp={true}
+                      pageID={obj2.pageID}
                     />
                   </Grid>
                 </Grow>

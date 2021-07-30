@@ -10,6 +10,17 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "1vh",
     paddingLeft: "1.3vw",
     paddingBottom: "4vh",
+    maxWidth: "430px",
+  },
+  chips: {
+    width: "120px",
+    fontSize: "18px",
+    [theme.breakpoints.down("sm")]: {
+      width: "107px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "102px",
+    },
   },
 }));
 
@@ -95,17 +106,16 @@ export default function ExploreCategories(props) {
   return (
     <Grid className={classes.chipsGrid} container spacing={2}>
       {categories.map((obj) => (
-        <Grid item key={obj.gridKey}>
+        <Grid item key={obj.gridKey} sm={4} md={4} lg={4}>
           <Grow in={true} timeout={2600}>
             <Chip
               label={obj.text}
               key={obj.chipKey}
+              className={classes.chips}
               onClick={chipClickHandler}
               variant={obj.activeBool ? "default" : "outlined"}
               style={{
                 color: obj.activeBool ? obj.activeColor : obj.color,
-                width: "120px",
-                fontSize: "18px",
                 borderColor: obj.color,
                 backgroundColor: obj.activeBool
                   ? obj.activeBackground

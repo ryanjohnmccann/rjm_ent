@@ -82,6 +82,9 @@ export default function ShowsContent(props) {
                       mainTitle={obj2.mainTitle}
                       body={obj2.body}
                       key={obj2.contentKey}
+                      isBlog={obj2.isBlog}
+                      isWatch={obj2.isWatch}
+                      pageID={obj2.pageID}
                     />
                   </Grid>
                 </Grow>
