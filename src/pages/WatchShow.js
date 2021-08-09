@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useParams } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import ContentCard4 from "../components/UI/ContentCards/ContentCard4";
-import watchShowData from "../components/Shows/watch-show-data";
+import watchShowData from "../data/WatchShow/watch-show-data.js";
 import { Fade } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({

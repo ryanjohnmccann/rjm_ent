@@ -4,8 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Zoom from "@material-ui/core/Zoom";
 import Carousel from "react-material-ui-carousel";
 import ContentCard1 from "../UI/ContentCards/ContentCard1";
-import createGrids from "./create-content-grids.js";
-import manageContentCards from "./create-content-cards.js";
+import createGrids from "../../data/Home/create-content-grids-data.js";
+import manageContentCards from "../../data/Home/create-content-cards-data.js";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({

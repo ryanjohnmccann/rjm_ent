@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-material-ui-carousel";
 import Grow from "@material-ui/core/Grow";
-import showsContent from "./create-shows-content.js";
+import showsContent from "../../data/Shows/create-shows-content-data.js";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ShowsContent(props) {
+export default function ShowsContent() {
   const classes = useStyles();
   function createShowGrid(gridKey, boxKey) {
     return { gridKey, boxKey };
@@ -82,6 +82,9 @@ export default function ShowsContent(props) {
                       mainTitle={obj2.mainTitle}
                       body={obj2.body}
                       key={obj2.contentKey}
+                      isBlog={obj2.isBlog}
+                      isWatch={obj2.isWatch}
+                      pageID={obj2.pageID}
                     />
                   </Grid>
                 </Grow>

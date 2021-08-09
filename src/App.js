@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Blogs from "./pages/Blogs";
 import IndividualBlog from "./pages/IndividualBlog";
+import IndBlogExplore from "./pages/IndBlogExplore";
 import IndividualShow from "./pages/IndividualShow";
 import WatchShow from "./pages/WatchShow";
 import About from "./pages/About";
@@ -41,6 +42,9 @@ function App() {
         <Route path="/blogs/:blogID" exact>
           <IndividualBlog />
         </Route>
+        <Route path="/blogs/explore/:blogPageID">
+          <IndBlogExplore />
+        </Route>
         <Route path="/about" exact>
           <About />
         </Route>
@@ -48,7 +52,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="*" key="/default">
-          <Redirect to="/blog" />
+          <Redirect to="/home" />
         </Route>
       </Switch>
       <Divider style={{ marginTop: "6vh" }} />

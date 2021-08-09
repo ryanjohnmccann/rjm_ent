@@ -19,19 +19,13 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "2vh",
   },
   secondaryHeader: {
-    [theme.breakpoints.down("md")]: {
-      textAlign: "center",
-    },
+    textAlign: "center",
   },
   divider: {
-    marginLeft: "5px",
+    margin: "auto",
     width: "200px",
     height: "3px",
-    color: "purple",
     background: "#164AB2",
-    [theme.breakpoints.down("md")]: {
-      margin: "auto",
-    },
   },
   gridContainer: {
     marginTop: "30px",
