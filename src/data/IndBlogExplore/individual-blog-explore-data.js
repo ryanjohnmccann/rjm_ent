@@ -2,7 +2,7 @@ import IndBlog1 from "../../assets/IndBlogExplore/IndBlog1.jpg";
 import Blog1Content from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-data.js";
 import Blog1Grids from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-grid.js";
 
-const individualShowData = [
+const individualBlogData = [
   {
     id: "random-blog-id-1",
     photo: IndBlog1,
@@ -20,4 +20,4 @@ const individualShowData = [
   { id: "random-show-id-7" },
 ];
 
-export default individualShowData;
+export default individualBlogData;

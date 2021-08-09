@@ -17,7 +17,8 @@ function createContentCard(
   pageID,
   isBlog = false,
   isWatch = false,
-  isBlogExp = false
+  isBlogExp = false,
+  readBlog = false,
 ) {
   return {
     alt,
@@ -34,6 +35,7 @@ function createContentCard(
     isBlog,
     isWatch,
     isBlogExp,
+    readBlog,
   };
 }
 
@@ -50,10 +52,11 @@ const indContentCards = [
       "randomIndBlogContentCard1",
       "randomIndContentGridItem1",
       "Random Blog Title 1",
-      "random-watch-blog-id-1",
+      "random-blog-id-1",
       false,
       false,
-      true
+      true,
+      true,
     ),
     createContentCard(
       "Random Image Individual Blog 2",
@@ -66,10 +69,11 @@ const indContentCards = [
       "randomIndBlogContentCard2",
       "randomIndContentGridItem2",
       "Random Blog Title 2",
-      "random-watch-blog-id-2",
+      "random-blog-id-2",
       false,
       false,
-      true
+      true,
+      true,
     ),
     createContentCard(
       "Random Image Individual Blog 3",
@@ -82,10 +86,11 @@ const indContentCards = [
       "randomIndBlogContentCard3",
       "randomIndContentGridItem3",
       "Random Blog Title 3",
-      "random-watch-blog-id-3",
+      "random-blog-id-3",
       false,
       false,
-      true
+      true,
+      true,
     ),
     createContentCard(
       "Random Image Individual Blog 4",
@@ -98,10 +103,11 @@ const indContentCards = [
       "randomIndBlogContentCard4",
       "randomIndContentGridItem4",
       "Random Blog Title 4",
-      "random-watch-blog-id-4",
+      "random-blog-id-4",
       false,
       false,
-      true
+      true,
+      true,
     ),
     createContentCard(
       "Random Image Individual Blog 5",
@@ -114,10 +120,11 @@ const indContentCards = [
       "randomIndBlogContentCard5",
       "randomIndContentGridItem5",
       "Random Blog Title 5",
-      "random-watch-blog-id-5",
+      "random-blog-id-5",
       false,
       false,
-      true
+      true,
+      true,
     ),
     createContentCard(
       "Random Image Individual Blog 6",
@@ -130,10 +137,11 @@ const indContentCards = [
       "randomIndBlogContentCard6",
       "randomIndContentGridItem6",
       "Random Blog Title 6",
-      "random-watch-blog-id-6",
+      "random-blog-id-6",
       false,
       false,
-      true
+      true,
+      true,
     ),
   ],
   [
@@ -148,10 +156,11 @@ const indContentCards = [
       "randomIndBlogContentCard7",
       "randomIndContentGridItem7",
       "Random Blog Title 7",
-      "random-watch-blog-id-7",
+      "random-blog-id-7",
       false,
       false,
-      true
+      true,
+      true,
     ),
   ],
 ];

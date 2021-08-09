@@ -25,7 +25,11 @@ export default function ContentCard1(props) {
   } else if (props.isWatch) {
     url = `/shows/watch/${props.pageID}`;
   } else if (props.isBlogExp) {
-    url = `/blogs/explore/${props.pageID}`;
+    if (props.readBlog) {
+      url = `/blogs/${props.pageID}`;
+    } else {
+      url = `/blogs/explore/${props.pageID}`;
+    }
   } else {
     url = `/shows/${props.pageID}`;
   }

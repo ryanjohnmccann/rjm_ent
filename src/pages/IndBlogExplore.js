@@ -2,9 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { useParams } from "react-router-dom";
-import IndBlogIntro from "../components/IndBlogExplore/IndBlogIntro.js";
+import IndBlogExpIntro from "../components/IndBlogExplore/IndBlogExpIntro.js";
 import IndBlogExplore from "../components/IndBlogExplore/IndBlogExplore.js";
-import individualBlogData from "../data/IndBlogExplore/individual-blog-data.js";
+import individualBlogData from "../data/IndBlogExplore/individual-blog-explore-data.js";
 import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export default function IndividualBlog() {
   const classes = useStyles();
   const params = useParams();
-  const blog = individualBlogData.find((blog) => blog.id === params.blogID);
+  const blog = individualBlogData.find((blog) => blog.id === params.blogPageID);
   return (
     <Fade in={true} timeout={1400}>
       <Grid
@@ -51,7 +51,7 @@ export default function IndividualBlog() {
           spacing={1}
           xs={12}
         >
-          <IndBlogIntro
+          <IndBlogExpIntro
             mainTitle={blog.mainTitle}
             titleDescription={blog.titleDescription}
           />

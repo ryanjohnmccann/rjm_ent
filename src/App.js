@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Blogs from "./pages/Blogs";
 import IndividualBlog from "./pages/IndividualBlog";
-import IndBlogExplore from "./components/IndBlogExplore/IndBlogExplore";
+import IndBlogExplore from "./pages/IndBlogExplore";
 import IndividualShow from "./pages/IndividualShow";
 import WatchShow from "./pages/WatchShow";
 import About from "./pages/About";

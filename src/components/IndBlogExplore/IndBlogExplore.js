@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IndShowExplore() {
+export default function IndBlogExplore() {
   const classes = useStyles();
   const contentGrids = createIndGrids(indContentCards);
   return (
@@ -66,6 +66,7 @@ export default function IndShowExplore() {
                   headerTitle={obj2.headerTitle}
                   headerDate={obj2.headerDate}
                   pageID={obj2.pageID}
+                  readBlog={obj2.readBlog}
                 />
               </Grid>
             </Zoom>
