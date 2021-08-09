@@ -52,7 +52,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="*" key="/default">
-          <Redirect to="/blog" />
+          <Redirect to="/home" />
         </Route>
       </Switch>
       <Divider style={{ marginTop: "6vh" }} />

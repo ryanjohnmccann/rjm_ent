@@ -13,7 +13,6 @@ function createShowContent(
   category,
   mainTitle,
   body,
-  date,
   contentKey,
   gridKey,
   pageID,
@@ -29,7 +28,6 @@ function createShowContent(
     category,
     mainTitle,
     body,
-    date,
     contentKey,
     gridKey,
     pageID,
@@ -49,7 +47,6 @@ const showsContent = [
       "Random Show Category",
       "Random Title",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
-      "April 20, 1999",
       "Show1Key1",
       "Show1GridKey1",
       "random-show-id-1"
@@ -63,7 +60,6 @@ const showsContent = [
       "Random Show Category",
       "Random Title",
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do...",
-      "April 20, 1999",
       "Show2Key2",
       "Show2GridKey1",
       "random-show-id-2"
@@ -77,7 +73,6 @@ const showsContent = [
       "Random Show Category",
       "Random Title",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
-      "April 20, 1999",
       "Show3Key3",
       "Show3GridKey1",
       "random-show-id-3"
@@ -93,7 +88,6 @@ const showsContent = [
       "Random Show Category",
       "Random Title",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...",
-      "April 20, 1999",
       "Show4Key4",
       "Show4GridKey2",
       "random-show-id-4"

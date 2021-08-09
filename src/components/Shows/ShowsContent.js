@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ShowsContent(props) {
+export default function ShowsContent() {
   const classes = useStyles();
   function createShowGrid(gridKey, boxKey) {
     return { gridKey, boxKey };
