@@ -3,7 +3,14 @@ import styles from "./ContactForm.module.css";
 export default function ContactForm() {
   return (
     <div className={styles.container}>
-      <form>
+      <form
+        action="POST"
+        data-netlify="true"
+        method="post"
+        role="form"
+        netlify-honeypot="bot-field"
+        netlify
+      >
         <label htmlFor="fname" className={styles.random}>
           First Name
         </label>
