@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#003cb3",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   search: {
     position: "relative",
@@ -106,7 +106,7 @@ export default function ButtonAppBar() {
             component="a"
             href="https://www.google.com"
           >
-            RJM Entertainment
+            RJMC Entertainment
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
