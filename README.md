@@ -4,6 +4,13 @@ https://www.rjmcentertainment.com
 ## Morty, A More Efficient Mortgage Calculator
 Type in some basic information and your home buying expenses are laid out with ease. Easily compare multiple home purchases and receive feedback along with suggestions from Morty, a virtual assistant to help you make the best possible and informed decisions.
 
+<br />
+
+## Version
+v1.0.4
+
+<br />
+
 ### Connect with us:
 
 [<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
@@ -11,13 +18,6 @@ Type in some basic information and your home buying expenses are laid out with e
 [<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-
-<br />
-
-## Version
-v1.0.4
-
-<br />
 
 ### Languages and Tools:
 
