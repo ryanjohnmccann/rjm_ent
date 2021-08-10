@@ -3,14 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Fade from "@material-ui/core/Fade";
-import ShowsContent from "../components/Shows/ShowsContent";
 import Divider from "@material-ui/core/Divider";
+import ShowsContent from "../components/Shows/ShowsContent";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
   root: {},
   header: {
-    marginLeft: "3vw",
     marginTop: "2vh",
   },
   showsDetails: {
@@ -27,7 +26,9 @@ export default function Shows() {
       <Grid container className={classes.root}>
         <Grid item className={classes.header}>
           <Fade in={true} timeout={1000}>
-            <Typography variant="h2">Shows</Typography>
+            <Typography variant="h2" style={{ marginLeft: "3vw" }}>
+              Shows
+            </Typography>
           </Fade>
           <Fade in={true} timeout={1200}>
             <div>
@@ -37,6 +38,7 @@ export default function Shows() {
                 variant="subtitle1"
                 component="p"
                 paragraph
+                style={{ marginLeft: "3vw" }}
               >
                 Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
                 deserunt ex proident non dolore. Sunt consectetur incididunt
@@ -49,7 +51,7 @@ export default function Shows() {
                 adipisicing dolore est fugiat culpa consectetur. Est in
                 cupidatat culpa minim id ipsum labore do ad reprehenderit.
               </Typography>
-              <Divider className={classes.divider} />
+              <Divider />
             </div>
           </Fade>
         </Grid>
