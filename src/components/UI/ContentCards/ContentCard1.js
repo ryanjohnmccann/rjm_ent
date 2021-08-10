@@ -44,7 +44,7 @@ export default function ContentCard1(props) {
             image={props.image}
             title={props.title}
           />
-          <CardContent style={{ backgroundColor: "#FBFBFB" }}>
+          <CardContent style={{ backgroundColor: "#EEEEEE" }}>
             <Typography
               gutterBottom
               variant="subtitle1"

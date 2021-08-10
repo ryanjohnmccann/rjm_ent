@@ -91,7 +91,7 @@ export default function ContactLinks() {
                   target="_blank"
                   className={classes.linkText}
                 >
-                  (978) 852 - 3328
+                  (978) 867 - 5309
                 </Typography>
               </Grid>
             </Grid>

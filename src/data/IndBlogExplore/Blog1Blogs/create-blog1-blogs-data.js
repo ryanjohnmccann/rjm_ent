@@ -18,7 +18,7 @@ function createContentCard(
   isBlog = false,
   isWatch = false,
   isBlogExp = false,
-  readBlog = false,
+  readBlog = false
 ) {
   return {
     alt,
@@ -56,7 +56,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
     createContentCard(
       "Random Image Individual Blog 2",
@@ -73,7 +73,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
     createContentCard(
       "Random Image Individual Blog 3",
@@ -90,7 +90,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
     createContentCard(
       "Random Image Individual Blog 4",
@@ -107,7 +107,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
     createContentCard(
       "Random Image Individual Blog 5",
@@ -124,7 +124,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
     createContentCard(
       "Random Image Individual Blog 6",
@@ -141,7 +141,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
   ],
   [
@@ -160,7 +160,7 @@ const indContentCards = [
       false,
       false,
       true,
-      true,
+      true
     ),
   ],
 ];

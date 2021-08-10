@@ -10,6 +10,9 @@ import blogsContent from "../../data/Blogs/create-blogs-data.js";
 // Handles styling
 const useStyles = makeStyles((theme) => ({
   rootBox: {
+    [theme.breakpoints.only("sm")]: {
+      height: "690px",
+    },
     marginTop: "20px",
     [theme.breakpoints.up("lg")]: {
       width: "1350px",
@@ -18,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   childBox: {
     height: "340px",
     [theme.breakpoints.down("sm")]: {
-      height: "600px",
+      height: "690px",
     },
     [theme.breakpoints.between("sm", "md")]: {
       width: "900px",
