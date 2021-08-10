@@ -6,7 +6,7 @@ import Image3 from "../../assets/Home/SlideShow/SlideShow3.jpg";
 import Image4 from "../../assets/Home/SlideShow/SlideShow4.jpg";
 import Image5 from "../../assets/Home/SlideShow/SlideShow5.jpg";
 
-export default function Test() {
+export default function SlideShow() {
   var items = [
     { image: Image1 },
     { image: Image2 },

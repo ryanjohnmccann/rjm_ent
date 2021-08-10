@@ -2,7 +2,7 @@ import AvatarRyan from "../../assets/Avatars/Ryan.jpg";
 import AvatarKyle from "../../assets/Avatars/Kyle.jpg";
 import AvatarPriscila from "../../assets/Avatars/Priscila.jpg";
 import AvatarGabby from "../../assets/Avatars/Gabby.jpg";
-import RyanBlog1 from "./blogDocs/Ryan/RyanBlog1.js"
+import RyanBlog1 from "./blogDocs/Ryan/RyanBlog1.js";
 
 const ryan = {
   avatar: AvatarRyan,
@@ -164,6 +164,5 @@ const individualBlogData = [
     blogContent: "Test 5",
   },
 ];
-
 
 export default individualBlogData;

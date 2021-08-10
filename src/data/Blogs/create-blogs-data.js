@@ -16,7 +16,7 @@ function createBlogContent(
   date,
   contentKey,
   gridKey,
-  pageID,
+  pageID
 ) {
   return {
     alt,
@@ -48,7 +48,7 @@ const blogsContent = [
       "April 20, 1999",
       "Blog1Key1",
       "Blog1GridKey1",
-      "random-blog-id-1",
+      "random-blog-id-1"
     ),
     createBlogContent(
       "Random alt",
@@ -62,7 +62,7 @@ const blogsContent = [
       "April 20, 1999",
       "Blog2Key2",
       "Blog2GridKey1",
-      "random-blog-id-2",
+      "random-blog-id-2"
     ),
     createBlogContent(
       "Random alt",
@@ -76,7 +76,7 @@ const blogsContent = [
       "April 20, 1999",
       "Blog3Key3",
       "Blog3GridKey1",
-      "random-blog-id-3",
+      "random-blog-id-3"
     ),
   ],
   [
@@ -92,7 +92,7 @@ const blogsContent = [
       "April 20, 1999",
       "Blog4Key4",
       "Blog4GridKey2",
-      "random-blog-id-4",
+      "random-blog-id-4"
     ),
   ],
 ];
