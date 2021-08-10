@@ -7,7 +7,6 @@ export default function ContactForm() {
         action="POST"
         data-netlify="true"
         method="post"
-        role="form"
         netlify-honeypot="bot-field"
         netlify
       >
