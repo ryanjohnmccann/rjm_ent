@@ -10,7 +10,6 @@ import Divider from "@material-ui/core/Divider";
 const useStyles = makeStyles((theme) => ({
   root: {},
   header: {
-    marginLeft: "3vw",
     marginTop: "2vh",
   },
   blogsDetails: {
@@ -26,7 +25,9 @@ export default function Blogs() {
       <Grid container className={classes.root}>
         <Grid item className={classes.header}>
           <Fade in={true} timeout={1000}>
-            <Typography variant="h2">Blogs</Typography>
+            <Typography variant="h2" style={{ marginLeft: "3vw" }}>
+              Blogs
+            </Typography>
           </Fade>
           <Fade in={true} timeout={1200}>
             <div>
@@ -36,6 +37,7 @@ export default function Blogs() {
                 variant="subtitle1"
                 component="p"
                 paragraph
+                style={{ marginLeft: "3vw" }}
               >
                 Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
                 deserunt ex proident non dolore. Sunt consectetur incididunt
