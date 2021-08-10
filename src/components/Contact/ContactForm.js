@@ -4,11 +4,10 @@ export default function ContactForm() {
   return (
     <div className={styles.container}>
       <form
-        action="POST"
+        name="contact"
         data-netlify="true"
-        method="post"
+        method="POST"
         netlify-honeypot="bot-field"
-        netlify
       >
         <label htmlFor="fname" className={styles.random}>
           First Name
