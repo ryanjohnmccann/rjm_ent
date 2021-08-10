@@ -15,6 +15,8 @@ v1.0.4
 [<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
+<br />
+
 ### Languages and Tools:
 
 [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][webdevplaylist]
@@ -42,32 +44,24 @@ v1.0.4
 ### 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [⭐ BONUS: STACKr News Shorts - Top 10 programming languages to learn in 2022](https://www.youtube.com/watch?v=-qcmzbsItnk)
-- [StackOverflow Survey 2021 Results! 📊, Java Roadmap 🚘, Build a Budget App in Python 🐍 // STACKr News](https://www.youtube.com/watch?v=7C3TdqA9vGs)
-- [⭐ BONUS: STACKr News Shorts - Add Authentication to Next.js](https://www.youtube.com/watch?v=H37-PgkpBO0)
-- [VS Code Has Dev Tools & Console!! No Need For Chrome Anymore 👋](https://www.youtube.com/watch?v=vHZPeohPHqo)
-- [⭐ BONUS: STACKr News Shorts - BYE BYE VS CODE ??](https://www.youtube.com/watch?v=r2ha0n2s3wE)
+<!-- - [⭐ BONUS: STACKr News Shorts - Top 10 programming languages to learn in 2022](https://www.youtube.com/watch?v=-qcmzbsItnk) -->
 <!-- YOUTUBE:END -->
 
-➡️ [more videos...](https://youtube.com/codestackr)
+<!-- ➡️ [more videos...](https://youtube.com/codestackr) -->
 
 ---
 
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [How To Pass Application Tracking Systems (ATS) & Get Interviews - Resume Tips for Software Developer](https://dev.to/codestackr/how-to-pass-application-tracking-systems-ats-get-interviews-resume-tips-for-software-developer-4bmo)
-- [Microinteractions: Password Validation Animation](https://dev.to/codestackr/microinteractions-password-validation-animation-5629)
-- [Notion + YouTube - A Powerful Combination for Productivity](https://dev.to/codestackr/notion-youtube-a-powerful-combination-for-productivity-1def)
-- [Regular Expressions (RegEx) Crash Course](https://dev.to/codestackr/regular-expressions-regex-crash-course-248n)
-- [Emmet Part 2 - Advanced](https://dev.to/codestackr/emmet-part-2-advanced-4c65)
+<!-- - [How To Pass Application Tracking Systems (ATS) & Get Interviews - Resume Tips for Software Developer](https://dev.to/codestackr/how-to-pass-application-tracking-systems-ats-get-interviews-resume-tips-for-software-developer-4bmo) -->
 <!-- BLOG-POST-LIST:END -->
 
-➡️ [more blog posts...](https://codestackr.com)
+<!-- ➡️ [more blog posts...](https://codestackr.com) -->
 
 ---
 
-[website]: https://codeSTACKr.com
+<!-- [website]: https://codeSTACKr.com
 [course]: http://vsCodeHero.com
 [twitter]: https://twitter.com/codeSTACKr
 [youtube]: https://youtube.com/codeSTACKr
@@ -76,4 +70,4 @@ v1.0.4
 [webdevplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrAJ0WbEsFA9W3I1W-g_BTsbt
 [jsplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrALRJKu7wfXby3MKeflhTu6B
 [cssplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrALSdvZuEh6gqQdmDoDIoqz4
-[reactplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrAK4TdffpxKY3QGyHCpxFcQ0
+[reactplaylist]: https://www.youtube.com/playlist?list=PLkwxH9e_vrAK4TdffpxKY3QGyHCpxFcQ0 -->
