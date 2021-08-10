@@ -19,6 +19,7 @@ v1.0.4
 [<img align="left" alt="codeSTACKr | Instagram" width="50px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 <br />
+<br />
 
 ## Languages and Tools:
 
