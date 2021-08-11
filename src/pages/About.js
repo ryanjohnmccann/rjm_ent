@@ -48,16 +48,18 @@ export default function About() {
             component="p"
             paragraph
           >
-            Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
-            deserunt ex proident non dolore. Sunt consectetur incididunt aute
-            amet laboris cillum reprehenderit officia fugiat enim excepteur
-            reprehenderit. Ut dolor ullamco proident duis minim magna culpa.
-            Incididunt mollit labore irure mollit velit ut cillum dolor irure
-            commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing
-            aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt.
-            Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat
-            culpa consectetur. Est in cupidatat culpa minim id ipsum labore do
-            ad reprehenderit.
+            RJMC entertainment is a general entertainment website with a wide
+            variety of content. It was originally created by Ryan McCann to help
+            improve his web development skills and to have a project to showcase to
+            future jobs. It has now grown to something much larger than
+            previously thought. The content on this website is meant for those
+            who have a curious mind and an endless need to learn. It ranges
+            anywhere from interviews with local music artists to blog posts from
+            foreigners about politics and philosophy. Our main goal is to not
+            only try to improve our own writing and speaking skills, but to
+            obtain as much knowledge as possible before we check out for good.
+            We’re very excited to see where this website takes us and hope you
+            all enjoy what we produce.
           </Typography>
         </Fade>
         <Box className={classes.secondaryHeader}>

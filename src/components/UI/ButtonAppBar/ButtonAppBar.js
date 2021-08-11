@@ -104,7 +104,7 @@ export default function ButtonAppBar() {
             variant="h6"
             className={classes.title}
             component="a"
-            href="https://www.google.com"
+            href="https://www.rjmcentertainment.com/home"
           >
             RJMC Entertainment
           </Typography>

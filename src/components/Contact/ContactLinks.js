@@ -74,7 +74,7 @@ export default function ContactLinks() {
                   target="_blank"
                   className={classes.linkText}
                 >
-                  rjmentertainment@gmail.com
+                  rjmcentertainment@gmail.com
                 </Typography>
               </Grid>
             </Grid>
