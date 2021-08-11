@@ -1,7 +1,6 @@
-import About1 from "../../assets/About/About1.jpg";
-import About2 from "../../assets/About/About2.jpg";
-import About3 from "../../assets/About/About3.jpg";
-import About4 from "../../assets/About/About4.jpg";
+import KyleAyerPhoto from "../../assets/About/98ayer.jpg";
+import RyanMcCannPhoto from "../../assets/About/ryan_mccann.png";
+import OsoPhoto from "../../assets/About/oso.png";
 
 function createAboutContentCard(
   img,
@@ -26,139 +25,66 @@ function createAboutContentCard(
 }
 const aboutContentCards = [
   createAboutContentCard(
-    About1,
-    "Random Grow Key (About) 1",
+    RyanMcCannPhoto,
+    "ryan-mccann-about-page-grow-key",
     "Ryan McCann",
     "Founder and Chief Technology Officer",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur. Est in cupidatat culpa minim id ipsum labore do ad reprehenderit.",
+    "After interning at a biotech company with some of the best engineers and scientists in the world, I was motivated to create something of my own. After contacting some like-minded friends, we decided to create this website! I coded it on my own using JavaScript and React.js. Other than that, I’m a fourth-year honors computer engineering student at UML. The honors college has pushed me to do things I never thought possible. Some examples include being a part of the national engineering honors society, IEEE, being in the top ten percent of my class, and creating a club at UML to help with poverty alleviation.",
     [
       {
         txt: "LinkedIn",
         link: "https://www.linkedin.com/in/ryanjmccann/",
-        key: "ryanLinkedIn",
+        key: "ryan-mccann-about-instagram-link-key",
       },
       {
         txt: "Website",
         link: "https://ryanjohnmccann.com",
-        key: "ryanWebsite",
+        key: "ryan-mccann-about-website-link-key",
       },
       {
         txt: "Instagram",
         link: "https://www.instagram.com/_ryanm_/",
-        key: "ryanInstagram",
-      },
-      {
-        txt: "More",
-        link: "/home",
-        key: "ryanMore",
+        key: "ryan-mccann-about-instagram-link-key",
       },
     ],
-    "about1Grid",
+    "ryan-mccann-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
-    About1,
-    "Random Grow Key (About) 2",
+    KyleAyerPhoto,
+    "98ayer-about-page-grow-key",
     "Kyle Ayer",
     "Chief Product Officer",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur.",
+    "Hey everyone, how’s it going! My name is Kyle Ayer, I’m sort of a jack of all trades type of guy. During my normal 9-5 (6-2) you’ll find me building elevators in the great city of Boston. Any time after that you could find me riding horses in my back yard, working on my tiny house on wheels, skiing in the east, or even taking road trips across the country. I’m a member of IUEC Local 4, also known as the elevators union. That great achievement alone has given me the ability and knowledge to build anything or explore anywhere my heart desires.",
     [
       {
         txt: "Instagram",
-        link: "https://www.instagram.com/",
-        key: "kyleInstagram",
+        link: "https://www.instagram.com/98ayer/",
+        key: "98ayer-about-instagram-link-key",
       },
       {
-        txt: "More",
-        link: "/home",
-        key: "kyleMore",
+        txt: "YouTube",
+        link: "https://youtube.com/channel/UC90qqEKlRzOXv8OjC4DzsGQ",
+        key: "98ayer-about-youtube-link-key",
       },
     ],
-    "about2Grid",
+    "98ayer-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
-    About4,
-    "Random Grow Key (About) 3",
-    "Kristen Cyr",
-    "Head of Quality Assurance",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt. Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat culpa consectetur. Est in cupidatat.",
+    OsoPhoto,
+    "oso-about-page-grow-key",
+    "Oso",
+    "IT Specialist",
+    "Hi, if there is ever anything wrong with the website, I most likely made a mistake. Please notify me as soon as possible and I will try to fix it. I'm only a dog so please be patient. I love the beach, table food, and being pet. I've been told my whole entire life that I can't do IT because I'm a dog so, I'm here to prove everybody wrong. Woof!",
     [
       {
-        txt: "Instagram",
-        link: "https://www.instagram.com/",
-        key: "kristenInstagram",
-      },
-      {
-        txt: "More",
-        link: "/home",
-        key: "kristenMore",
+        txt: "Don't Click This",
+        link: "https://www.instagram.com/marshallmaerogan/?hl=en",
+        key: "oso-about-random-link-key",
       },
     ],
-    "about3Grid",
-    "280px"
-  ),
-  createAboutContentCard(
-    About3,
-    "Random Grow Key (About) 4",
-    "Kyran McCann",
-    "Content Creator",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt.",
-    [
-      {
-        txt: "Instagram",
-        link: "https://www.instagram.com/",
-        key: "kyranInstagram",
-      },
-      {
-        txt: "More",
-        link: "/home",
-        key: "kyranMore",
-      },
-    ],
-    "about4Grid",
-    "280px"
-  ),
-  createAboutContentCard(
-    About2,
-    "Random Grow Key (About) 5",
-    "Priscila Garcia Oliver",
-    "Content Creator",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore.",
-    [
-      {
-        txt: "Instagram",
-        link: "https://www.instagram.com/",
-        key: "priscilaInstagram",
-      },
-      {
-        txt: "More",
-        link: "/home",
-        key: "priscilaMore",
-      },
-    ],
-    "about5Grid",
-    "244px"
-  ),
-  createAboutContentCard(
-    About1,
-    "Random Grow Key (About) 6",
-    "Jack Flood",
-    "Graphic Designer",
-    "Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet deserunt ex proident non dolore. Sunt consectetur incididunt aute amet laboris cillum reprehenderit officia fugiat enim excepteur reprehenderit. Ut dolor ullamco proident duis minim magna culpa. Incididunt mollit labore irure mollit velit ut cillum dolor irure commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing aliqua pariatur veniam veniam nulla.",
-    [
-      {
-        txt: "Instagram",
-        link: "https://www.instagram.com/",
-        key: "jackInstagram",
-      },
-      {
-        txt: "More",
-        link: "/home",
-        key: "jackMore",
-      },
-    ],
-    "about6Grid",
+    "oso-about-page-grid-key",
     "280px"
   ),
 ];

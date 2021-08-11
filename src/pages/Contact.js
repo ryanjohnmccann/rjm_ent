@@ -40,16 +40,15 @@ export default function Contact() {
             component="p"
             paragraph
           >
-            Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
-            deserunt ex proident non dolore. Sunt consectetur incididunt aute
-            amet laboris cillum reprehenderit officia fugiat enim excepteur
-            reprehenderit. Ut dolor ullamco proident duis minim magna culpa.
-            Incididunt mollit labore irure mollit velit ut cillum dolor irure
-            commodo esse voluptate. Eiusmod nisi elit voluptate adipisicing
-            aliqua pariatur veniam veniam nulla fugiat minim ipsum incididunt.
-            Eu minim nisi aute nostrud pariatur adipisicing dolore est fugiat
-            culpa consectetur. Est in cupidatat culpa minim id ipsum labore do
-            ad reprehenderit.
+            The best way to contact us is by email, but feel free to use any
+            method listed below. Keep in mind there may not be as quick of a
+            response when using other methods. If there are any issues specific
+            to the website, for example you encountered an error, please either
+            email us or fill out the contact form below. When describing an
+            issue on the website, try to be as specific as possible and also
+            have some screenshots. If you'd like to collaborate or have any
+            content suggestions, we'd love to hear them, so don't hesitate reach
+            out!
           </Typography>
         </Fade>
       </Box>
