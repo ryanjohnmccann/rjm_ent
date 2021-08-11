@@ -50,12 +50,12 @@ export default function About() {
           >
             RJMC entertainment is a general entertainment website with a wide
             variety of content. It was originally created by Ryan McCann to help
-            improve his web development skills and to have a project to showcase to
-            future jobs. It has now grown to something much larger than
-            previously thought. The content on this website is meant for those
-            who have a curious mind and an endless need to learn. It ranges
-            anywhere from interviews with local music artists to blog posts from
-            foreigners about politics and philosophy. Our main goal is to not
+            improve his web development skills and to have a project to show at
+            future job interviews. It has now grown to something much larger
+            than previously thought. The content on this website is meant for
+            those who have a curious mind and an endless desire to learn. It
+            ranges anywhere from interviews with local music artists to blog
+            posts talking about politics and philosophy. Our main goal is to not
             only try to improve our own writing and speaking skills, but to
             obtain as much knowledge as possible before we check out for good.
             We’re very excited to see where this website takes us and hope you

@@ -70,54 +70,54 @@ export default function Footer() {
   const links = [
     createLink(
       "/about",
-      "Random Effect Key (Footer) 1",
+      "footer-about-effect-key",
       "none",
       "inherit",
       "About",
-      "footAboutLink",
-      "footAboutGrid"
+      "footer-about-link-key",
+      "footer-about-grid-key"
     ),
     createLink(
       "/contact",
-      "Random Effect Key (Footer) 2",
+      "footer-contact-effect-key",
       "none",
       "inherit",
       "Contact",
-      "footContactLink",
-      "footContactGrid"
+      "footer-contact-link-key",
+      "footer-contact-grid-key"
     ),
   ];
   const icons = [
     createIcon(
-      "https://www.facebook.com",
-      "Random Effect Key (Footer) 3",
+      "https://www.facebook.com/RJMC-Entertainment-104107081980025",
+      "footer-facebook-effect-key",
       <FacebookIcon style={{ fontSize: "50px" }} />,
-      "footFaceBook",
-      "faceBookGrid",
+      "footer-facebook-link-key",
+      "footer-facebook-grid-key",
       classes.facebookIcon
     ),
     createIcon(
-      "https://www.instagram.com",
-      "Random Effect Key (Footer) 4",
+      "https://www.instagram.com/rjmcent/",
+      "footer-instagram-effect-key",
       <InstagramIcon style={{ fontSize: "50px" }} />,
-      "footInstagram",
-      "instagramGrid",
+      "footer-instagram-link-key",
+      "footer-instagram-grid-key",
       classes.instagramIcon
     ),
     createIcon(
-      "https://www.youtube.com",
-      "Random Effect Key (Footer) 5",
+      "https://www.youtube.com/channel/UCCPrPCBzFwd9PSj7Ffe2u9g",
+      "footer-youtube-effect-key",
       <YouTubeIcon style={{ fontSize: "50px" }} />,
-      "footYouTube",
-      "youTubeGrid",
+      "footer-youtube-link-key",
+      "footer-youtube-grid-key",
       classes.youtubeIcon
     ),
     createIcon(
-      "https://www.twitter.com",
-      "Random Effect Key (Footer) 6",
+      "https://twitter.com/RJMCEnt",
+      "footer-twitter-effect-key",
       <TwitterIcon style={{ fontSize: "50px" }} />,
-      "footFaceBook",
-      "twitterGrid",
+      "footer-twitter-link-key",
+      "footer-twitter-grid-key",
       classes.twitterIcon
     ),
   ];

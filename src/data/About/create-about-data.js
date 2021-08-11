@@ -29,7 +29,7 @@ const aboutContentCards = [
     "ryan-mccann-about-page-grow-key",
     "Ryan McCann",
     "Founder and Chief Technology Officer",
-    "After interning at a biotech company with some of the best engineers and scientists in the world, I was motivated to create something of my own. After contacting some like-minded friends, we decided to create this website! I coded it on my own using JavaScript and React.js. Other than that, I’m a fourth-year honors computer engineering student at UML. The honors college has pushed me to do things I never thought possible. Some examples include being a part of the national engineering honors society, IEEE, being in the top ten percent of my class, and creating a club at UML to help with poverty alleviation.",
+    "After interning at a biotech company with some of the best engineers and scientists in the world, I was motivated to create something of my own. So, I contacted some like-minded friends and we decided to create this website! I coded it on my own using JavaScript and React.js. Other than that, I’m a fourth-year honors computer engineering student at UML. The honors college has pushed me to do things I never thought possible. Some examples include being a part of the national engineering honors society, IEEE, being in the top ten percent of my class, and creating a club at UML to help with poverty alleviation.",
     [
       {
         txt: "LinkedIn",
