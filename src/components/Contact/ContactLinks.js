@@ -47,10 +47,10 @@ const useStyles = makeStyles((theme) => ({
 export default function ContactLinks() {
   const classes = useStyles();
   const links = {
-    email: "https://www.google.com",
-    phone: "https://www.google.com",
-    twitter: "https://www.google.com",
-    instagram: "https://www.google.com",
+    email: "/contact",
+    phone: "/contact",
+    twitter: "https://twitter.com/RJMCEnt",
+    instagram: "https://www.instagram.com/rjmcent/",
   };
   return (
     <Card className={classes.root}>
@@ -74,7 +74,7 @@ export default function ContactLinks() {
                   target="_blank"
                   className={classes.linkText}
                 >
-                  rjmcentertainment@gmail.com
+                  rjmcentertainment0@gmail.com
                 </Typography>
               </Grid>
             </Grid>

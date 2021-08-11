@@ -45,9 +45,9 @@ export default function Contact() {
             response when using other methods. If there are any issues specific
             to the website, for example you encountered an error, please either
             email us or fill out the contact form below. When describing an
-            issue on the website, try to be as specific as possible and also
-            have some screenshots. If you'd like to collaborate or have any
-            content suggestions, we'd love to hear them, so don't hesitate reach
+            issue on the website, try to be as specific as possible and to
+            include some screenshots. If you'd like to collaborate or have any
+            content suggestions, we'd love to hear them, so don't hesitate to reach
             out!
           </Typography>
         </Fade>
