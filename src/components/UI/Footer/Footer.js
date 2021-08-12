@@ -157,7 +157,7 @@ export default function Footer() {
         </Grid>
         <Fade in={true} timeout={2000}>
           <Box className={classes.rights}>
-            &copy; 2021 - All rights reserved RJM Entertainment
+            &copy; 2021 - All rights reserved RJMC Entertainment
           </Box>
         </Fade>
       </Box>

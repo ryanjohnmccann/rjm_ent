@@ -1,23 +1,17 @@
-import IndBlog1 from "../../assets/IndBlogExplore/IndBlog1.jpg";
-import Blog1Content from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-data.js";
-import Blog1Grids from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-grid.js";
+import TheCuriousMindPhoto from "../../assets/Blogs/the-curious-mind.jpg"
+import TheCuriousMindBlogContent from "../../data/IndBlogExplore/TheCuriousMindBlogs/create-the-curious-mind-blogs-data.js";
+import TheCuriousMindBlogGrids from "../../data/IndBlogExplore/TheCuriousMindBlogs/create-the-curious-mind-blogs-grid.js";
 
 const individualBlogData = [
   {
-    id: "random-blog-id-1",
-    photo: IndBlog1,
-    mainTitle: "Ryan McCann",
+    id: "the-curious-mind",
+    photo: TheCuriousMindPhoto,
+    mainTitle: "The Curious Mind",
     titleDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    blogContent: Blog1Content,
-    blogGrids: Blog1Grids,
+      "The Curious Mind Blog was created by Ryan McCann to improve his writing skills by writing about topics he’s passionate about. The topics consist of whatever comes to his mind at that time, so there is no category or genre that can be associated with this blog. One thing’s for sure, the content published here is meant for the curious and open minded. So kick back, and start exploring the curious part of your mind.",
+    blogContent: TheCuriousMindBlogContent,
+    blogGrids: TheCuriousMindBlogGrids,
   },
-  { id: "random-show-id-2" },
-  { id: "random-show-id-3" },
-  { id: "random-show-id-4" },
-  { id: "random-show-id-5" },
-  { id: "random-show-id-6" },
-  { id: "random-show-id-7" },
 ];
 
 export default individualBlogData;

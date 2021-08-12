@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   blogPhotoDetails: {
-    maxWidth: "70%",
+    maxWidth: "800px",
     fontStyle: "italic",
     textAlign: "left",
     [theme.breakpoints.down("md")]: {

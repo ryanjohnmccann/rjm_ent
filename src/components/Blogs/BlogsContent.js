@@ -57,8 +57,7 @@ export default function BlogsContent(props) {
   }
 
   const blogGrids = [
-    createBlogGrid("randomBlogGridKey1", "randomBoxKeyBlogs1"),
-    createBlogGrid("randomBlogGridKey2", "randomBoxKeyBlogs2"),
+    createBlogGrid("blog-page-grid-key1", "blog-page-box-key1"),
   ];
 
   return (
