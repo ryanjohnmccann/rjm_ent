@@ -4,8 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Zoom from "@material-ui/core/Zoom";
 import { makeStyles } from "@material-ui/core/styles";
 import ContentCard1 from "../UI/ContentCards/ContentCard1.js";
-import indContentCards from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-data.js";
-import createIndGrids from "../../data/IndBlogExplore/Blog1Blogs/create-blog1-blogs-grid.js";
 
 const useStyles = makeStyles((theme) => ({
   carousel: {
@@ -24,9 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IndBlogExplore() {
+export default function IndBlogExplore(props) {
   const classes = useStyles();
-  const contentGrids = createIndGrids(indContentCards);
+  const contentGrids = props.blogGrids(props.blogContent);
   return (
     <Carousel autoPlay={false} animation="slide" className={classes.carousel}>
       {contentGrids.map((obj, index) => (
@@ -39,7 +37,7 @@ export default function IndBlogExplore() {
           key={obj.gridKey}
           className={classes.gridContainer}
         >
-          {indContentCards[index].map((obj2) => (
+          {props.blogContent[index].map((obj2) => (
             <Zoom in={true} timeout={500} key={obj2.zoomKey}>
               <Grid
                 sm={6}
