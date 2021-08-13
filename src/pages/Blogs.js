@@ -46,7 +46,7 @@ export default function Blogs() {
                 Some examples include politics and human rights, philosophy,
                 computer science, and many more. If you’d like to reach out to
                 any of our content creators or potentially become one, please
-                visit the contact page and contact us as soon as you can.
+                visit the contact page and let us know as soon as you can.
               </Typography>
               <Divider />
             </div>

@@ -57,8 +57,7 @@ export default function ShowsContent() {
   }
 
   const showGrids = [
-    createShowGrid("randomShowGridKey1", "randomBoxKeyShows1"),
-    createShowGrid("randomShowGridKey2", "randomBoxKeyShows2"),
+    createShowGrid("show-page-grid-key1", "show-page-box-key1"),
   ];
 
   return (

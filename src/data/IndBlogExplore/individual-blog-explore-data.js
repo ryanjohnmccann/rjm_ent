@@ -8,7 +8,7 @@ const individualBlogData = [
     photo: TheCuriousMindPhoto,
     mainTitle: "The Curious Mind",
     titleDescription:
-      "The Curious Mind Blog was created by Ryan McCann to improve his writing skills by writing about topics he’s passionate about. The topics consist of whatever comes to his mind at that time, so there is no category or genre that can be associated with this blog. One thing’s for sure, the content published here is meant for the curious and open minded. So kick back, and start exploring the curious part of your mind.",
+      "The Curious Mind Blog was created by Ryan McCann to improve his writing skills by writing about topics he’s passionate about. The topics consist of whatever comes to his mind at that time, so there is no category or genre that can be associated with this blog. One thing’s for sure, the content published here is meant for the curious and open minded.",
     blogContent: TheCuriousMindBlogContent,
     blogGrids: TheCuriousMindBlogGrids,
   },

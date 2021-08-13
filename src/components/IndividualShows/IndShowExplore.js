@@ -4,8 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Zoom from "@material-ui/core/Zoom";
 import { makeStyles } from "@material-ui/core/styles";
 import ContentCard1 from "../UI/ContentCards/ContentCard1.js";
-import indContentCards from "../../data/IndividualShow/Show1Shows/create-show1-shows-data.js";
-import createIndGrids from "../../data/IndividualShow/Show1Shows/create-show1-shows-grid.js";
+import indContentCards from "../../data/IndividualShow/TheBKRShows/create-the-bkr-shows-data.js";
+import createIndGrids from "../../data/IndividualShow/TheBKRShows/create-the-bkr-shows-grid.js";
 
 const useStyles = makeStyles((theme) => ({
   carousel: {
