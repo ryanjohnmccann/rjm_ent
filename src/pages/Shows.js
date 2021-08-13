@@ -40,16 +40,12 @@ export default function Shows() {
                 paragraph
                 style={{ marginLeft: "3vw" }}
               >
-                Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
-                deserunt ex proident non dolore. Sunt consectetur incididunt
-                aute amet laboris cillum reprehenderit officia fugiat enim
-                excepteur reprehenderit. Ut dolor ullamco proident duis minim
-                magna culpa. Incididunt mollit labore irure mollit velit ut
-                cillum dolor irure commodo esse voluptate. Eiusmod nisi elit
-                voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat
-                minim ipsum incididunt. Eu minim nisi aute nostrud pariatur
-                adipisicing dolore est fugiat culpa consectetur. Est in
-                cupidatat culpa minim id ipsum labore do ad reprehenderit.
+                RJMC entertainment has a large array of shows from a unique set
+                of content creators. Episodes can range anywhere from laid-back
+                humorous conversations to more serious topics relating to
+                science and engineering. If you’re interested in being on one of
+                our shows or want to create your own, please visit the
+                contact page and send us an email.
               </Typography>
               <Divider />
             </div>

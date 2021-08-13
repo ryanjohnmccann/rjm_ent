@@ -1,24 +1,18 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpg";
-import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpg";
-import Image3 from "../../assets/Home/SlideShow/SlideShow3.jpg";
-import Image4 from "../../assets/Home/SlideShow/SlideShow4.jpg";
-import Image5 from "../../assets/Home/SlideShow/SlideShow5.jpg";
+import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpeg";
+import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpeg";
 
 export default function SlideShow() {
   var items = [
-    { image: Image1 },
-    { image: Image2 },
-    { image: Image3 },
-    { image: Image4 },
-    { image: Image5 },
+    { image: Image1, link: "/shows/the-bkr-show" },
+    { image: Image2, link: "/blogs/explore/the-curious-mind" },
   ];
 
   return (
     <Carousel animation="slide" timeout={200} interval={6000}>
       {items.map((item, i) => (
-        <Item key={i} item={item} />
+        <Item key={i} item={item} link={item.link} />
       ))}
     </Carousel>
   );
@@ -28,7 +22,7 @@ function Item(props) {
   return (
     <React.Fragment>
       <a
-        href="https://www.google.com"
+        href={props.link}
         target="_blank"
         rel="noopener noreferrer"
       >
