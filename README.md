@@ -8,7 +8,7 @@ Type in some basic information and your home buying expenses are laid out with e
 
 ## Version
 
-v1.0.7
+v1.0.8
 
 ## Connect with us:
 

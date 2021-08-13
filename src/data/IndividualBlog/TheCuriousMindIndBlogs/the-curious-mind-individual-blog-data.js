@@ -1,6 +1,6 @@
-import AvatarRyan from "../../assets/About/ryan_mccann.png";
-import TheCuriousMindBlog1 from "./blogDocs/TheCuriousMind/Blog1.js";
-import Blog1 from "../../assets/IndividualBlogs/TheCuriousMindBlogs/Blog1.jpg"
+import AvatarRyan from "../../../assets/About/ryan_mccann.png";
+import TheCuriousMindBlog1 from "../blogDocs/TheCuriousMind/Blog1.js";
+import Blog1 from "../../../assets/IndividualBlogs/TheCuriousMindBlogs/Blog1.jpg"
 
 const ryan = {
   avatar: AvatarRyan,
