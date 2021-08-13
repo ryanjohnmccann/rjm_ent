@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import IndBlogIntro from "../components/IndividualBlogs/IndBlogIntro.js";
 import IndBlogButtons from "../components/IndividualBlogs/IndBlogButtons.js";
 import IndBlogBody from "../components/IndividualBlogs/IndBlogBody.js";
-import individualBlogData from "../data/IndividualBlog/individual-blog-data.js";
+import TheCuriousMindIndBlogs from "../data/IndividualBlog/TheCuriousMindIndBlogs/the-curious-mind-individual-blog-data.js";
 import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +42,12 @@ const useStyles = makeStyles((theme) => ({
 export default function IndividualBlog() {
   const classes = useStyles();
   const params = useParams();
-  const blog = individualBlogData.find((blog) => blog.id === params.blogID);
+  var blog;
+  if (params.blogID.startsWith("the-curious-mind")) {
+    blog = TheCuriousMindIndBlogs.find((blog) => blog.id === params.blogID);
+  } else {
+    blog = null;
+  }
   return (
     <Fade in={true} timeout={1600}>
       <Grid

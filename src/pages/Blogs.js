@@ -39,16 +39,14 @@ export default function Blogs() {
                 paragraph
                 style={{ marginLeft: "3vw" }}
               >
-                Eiusmod nulla ad anim cupidatat magna nisi laborum amet amet
-                deserunt ex proident non dolore. Sunt consectetur incididunt
-                aute amet laboris cillum reprehenderit officia fugiat enim
-                excepteur reprehenderit. Ut dolor ullamco proident duis minim
-                magna culpa. Incididunt mollit labore irure mollit velit ut
-                cillum dolor irure commodo esse voluptate. Eiusmod nisi elit
-                voluptate adipisicing aliqua pariatur veniam veniam nulla fugiat
-                minim ipsum incididunt. Eu minim nisi aute nostrud pariatur
-                adipisicing dolore est fugiat culpa consectetur. Est in
-                cupidatat culpa minim id ipsum labore do ad reprehenderit.
+                RJMC entertainment has many blogs from a diverse set of voices
+                around the world. We have content creators in the United States,
+                Mexico, and Venezuela. Our bloggers have complete creative
+                freedom and write about topics they’re most passionate about.
+                Some examples include politics and human rights, philosophy,
+                computer science, and many more. If you’d like to reach out to
+                any of our content creators or potentially become one, please
+                visit the contact page and contact us as soon as you can.
               </Typography>
               <Divider />
             </div>
