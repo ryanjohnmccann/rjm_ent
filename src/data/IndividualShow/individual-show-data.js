@@ -8,7 +8,7 @@ const individualShowData = [
     photo: TheBKRShow,
     mainTitle: "The BKR Show",
     titleDescription:
-      "Join us on the BKR show for random conversations about anything and everything. From humorous conversations to more serious discussions about science and engineering. At the end of the day, we are trying to improve our speaking skills and learn a lot along the way.",
+      "Join us on the BKR show for random conversations about anything and everything. From humorous topics to more serious ones about science and engineering. At the end of the day, we are trying to improve our speaking skills and learn a lot along the way.",
     showContent: TheBKRShowContent,
     showGrids: TheBKRShowGrids,
   },

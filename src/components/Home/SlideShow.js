@@ -1,7 +1,21 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
+import { makeStyles } from "@material-ui/core/styles";
 import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpeg";
 import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpeg";
+
+// Handles styling
+const useStyles = makeStyles((theme) => ({
+  slideImage: {
+    height: "65vh",
+    [theme.breakpoints.down("sm")]: {
+      height: "335px",
+    },
+    width: "97%",
+    marginTop: "1vh",
+    marginLeft: "1.5vw",
+  },
+}));
 
 export default function SlideShow() {
   var items = [
@@ -19,22 +33,14 @@ export default function SlideShow() {
 }
 
 function Item(props) {
+  const classes = useStyles();
   return (
     <React.Fragment>
-      <a
-        href={props.link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
         <img
           src={props.item.image}
           alt="Slide Show"
-          style={{
-            height: "65vh",
-            width: "97%",
-            marginTop: "1vh",
-            marginLeft: "1.5vw",
-          }}
+          className={classes.slideImage}
         />
       </a>
     </React.Fragment>

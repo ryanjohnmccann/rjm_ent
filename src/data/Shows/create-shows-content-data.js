@@ -44,7 +44,7 @@ const showsContent = [
       colorArr[0],
       "TV & Film",
       "The BKR Show",
-      "Join us on the BKR show for random conversations about anything and everything. From humorous conversations to...",
+      "Join us on the BKR show for random conversations about anything and everything. From humorous topics to...",
       "the-bkr-show-content-key",
       "the-bkr-show-grid-key",
       "the-bkr-show"
