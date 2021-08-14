@@ -89,18 +89,20 @@ export default function ExploreCategories(props) {
       setAllButton(true);
       setShowButton(false);
       setBlogButton(false);
+      props.categoryClicked(desButton);
     }
     if (desButton === "Show") {
       setShowButton(true);
       setAllButton(false);
       setBlogButton(false);
+      props.categoryClicked(desButton);
     }
     if (desButton === "Blog") {
       setBlogButton(true);
       setAllButton(false);
       setShowButton(false);
+      props.categoryClicked(desButton);
     }
-    props.categoryClicked(desButton);
   };
 
   return (

@@ -2,20 +2,19 @@
 
 https://www.rjmcentertainment.com
 
-## Morty, A More Efficient Mortgage Calculator
+## About Us
 
-Type in some basic information and your home buying expenses are laid out with ease. Easily compare multiple home purchases and receive feedback along with suggestions from Morty, a virtual assistant to help you make the best possible and informed decisions.
+RJMC entertainment is a general entertainment website with a wide variety of content. It was originally created by Ryan McCann to help improve his web development skills and to have a project to show at future job interviews. It has now grown to something much larger than previously thought. The content on this website is meant for those who have a curious mind and an endless desire to learn. It ranges anywhere from interviews with local music artists to blog posts talking about politics and philosophy. Our main goal is to not only try to improve our own writing and speaking skills, but to obtain as much knowledge as possible before we check out for good. We’re very excited to see where this website takes us and hope you all enjoy what we produce.
 
 ## Version
 
-v1.0.9
+v1.0.10
 
 ## Connect with us:
 
 [<img align="left" alt="codeSTACKr.com" width="45px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="codeSTACKr | YouTube" width="45px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="codeSTACKr | Twitter" width="45px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="45px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="codeSTACKr | Instagram" width="45px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 <br />
@@ -58,9 +57,7 @@ v1.0.9
 
 ---
 
-[website]: https://codeSTACKr.com
-[course]: http://vsCodeHero.com
-[twitter]: https://twitter.com/codeSTACKr
-[youtube]: https://youtube.com/codeSTACKr
-[instagram]: https://instagram.com/codeSTACKr
-[linkedin]: https://linkedin.com/in/codeSTACKr
+[website]: https://www.rjmcentertainment.com/home
+[twitter]: https://twitter.com/RJMCEnt
+[youtube]: https://www.youtube.com/channel/UCCPrPCBzFwd9PSj7Ffe2u9g
+[instagram]: https://www.instagram.com/rjmcent/
