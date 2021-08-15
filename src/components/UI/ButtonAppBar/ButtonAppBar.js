@@ -7,6 +7,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Drawer from "@material-ui/core/Drawer";
 import MenuIcon from "@material-ui/icons/Menu";
 import NavBarList from "../NavBar/NavBarList";
+import Logo from "../../../assets/logo180.png"
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -63,6 +64,10 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
   },
+  logo: {
+    height: "50px",
+    marginRight: theme.spacing(1),
+  },
 }));
 
 export default function ButtonAppBar() {
@@ -98,6 +103,7 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
+          <img src={Logo} alt="RJMC Entertainment Logo" className={classes.logo} />
           <Typography
             variant="h6"
             className={classes.title}
