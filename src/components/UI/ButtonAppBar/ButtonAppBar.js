@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#003cb3",
   },
   menuButton: {
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(0),
   },
   search: {
     position: "relative",

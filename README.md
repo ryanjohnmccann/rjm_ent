@@ -8,7 +8,7 @@ RJMC entertainment is a general entertainment website with a wide variety of con
 
 ## Version
 
-v1.0.11
+v1.0.12
 
 ## Connect with us:
 
