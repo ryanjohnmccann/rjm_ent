@@ -10,27 +10,27 @@
     {
       "src": "logo16.png",
       "type": "image/png",
-      "sizes": "9x16"
+      "sizes": "16x16"
     },
     {
       "src": "logo48.png",
       "type": "image/png",
-      "sizes": "26x48"
+      "sizes": "48x48"
     },
     {
       "src": "logo180.png",
       "type": "image/png",
-      "sizes": "99x180"
+      "sizes": "180x180"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "106x192"
+      "sizes": "192x192"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "282x512"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
