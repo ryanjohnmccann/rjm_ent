@@ -1,6 +1,9 @@
 import KyleAyerPhoto from "../../assets/About/98ayer.jpg";
 import RyanMcCannPhoto from "../../assets/About/ryan_mccann.png";
 import OsoPhoto from "../../assets/About/oso.png";
+import KyranMcCannPhoto from "../../assets/About/kyran_mccann.png";
+import PriscilaOliverPhoto from "../../assets/About/priscila_oliver.png"
+import GabbyDugartePhoto from "../../assets/About/gabby_dugarte.png"
 
 function createAboutContentCard(
   img,
@@ -34,7 +37,7 @@ const aboutContentCards = [
       {
         txt: "LinkedIn",
         link: "https://www.linkedin.com/in/ryanjmccann/",
-        key: "ryan-mccann-about-instagram-link-key",
+        key: "ryan-mccann-about-linkedin-link-key",
       },
       {
         txt: "Website",
@@ -69,6 +72,64 @@ const aboutContentCards = [
       },
     ],
     "98ayer-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    KyranMcCannPhoto,
+    "kyran-mccann-about-page-grow-key",
+    "Kyran McCann",
+    "Chief Marketing Officer",
+    "Auto technician. Coach. Vice President. Co-Founder. Just a few titles I have to my name. I went to school for and work as an auto technician but I want something more with life. I co-founded Wolfpack Football and I'm currently its Vice President. I love working in the community and giving back as I believe it helps my karma. I was content with all that until Ryan and others came to me with this idea and now we're living it. Hope you enjoy our shows!",
+    [
+      {
+        txt: "Instagram",
+        link: "https://www.instagram.com/my_name_is_ky22/",
+        key: "kyran-mccann-about-instagram-link-key",
+      },
+      {
+        txt: "Facebook",
+        link: "https://www.facebook.com/kyran.mccann.1",
+        key: "kyran-mccann-about-facebook-link-key",
+      },
+    ],
+    "kyran-mccann-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    PriscilaOliverPhoto,
+    "priscila-oliver-about-page-grow-key",
+    "Priscila Oliver",
+    "Content Creator",
+    "Hola! I’m an International Relations student, passionate about anything that makes my heart beat fast. Human Rights and International Cooperation studies are really my interests, but I also love dancing, horseback riding, partying, and designing for fun! I am the founder of the Grandes Mentes Project, which aims to help children in vulnerable areas of Mexico through education. I’m also a member of the Pathchola Foundation as an Innovation Adviser. This organization protects gender minority people in Bangladesh.",
+    [
+      {
+        txt: "Instagram",
+        link: "https://www.instagram.com/prscila_oliver/",
+        key: "priscila-oliver-about-instagram-link-key",
+      },
+      {
+        txt: "LinkedIn",
+        link: "https://www.linkedin.com/in/priscila-garc%C3%ADa-oliver-a3034a208/",
+        key: "priscila-oliver-about-linkedin-link-key",
+      },
+    ],
+    "priscila-oliver-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    GabbyDugartePhoto,
+    "gabby-dugarte-about-page-grow-key",
+    "Gabby Dugarte",
+    "Content Creator",
+    "My name is Gaby and I'm 19 years old. I am a systems and language engineering student. I live in the countryside and I consider myself a fairly active and multifaceted person. I love doing many things that help me grow professionally and nurture me as a human being.",
+    [
+      {
+        txt: "Instagram",
+        link: "https://www.instagram.com/gabydugartep/",
+        key: "gabby-dugarte-about-instagram-link-key",
+      },
+    ],
+    "gabby-dugarte-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
