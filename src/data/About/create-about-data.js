@@ -1,6 +1,7 @@
 import KyleAyerPhoto from "../../assets/About/98ayer.jpg";
 import RyanMcCannPhoto from "../../assets/About/ryan_mccann.png";
 import OsoPhoto from "../../assets/About/oso.png";
+import KyranMcCannPhoto from "../../assets/About/kyran_mccann.png";
 
 function createAboutContentCard(
   img,
@@ -69,6 +70,22 @@ const aboutContentCards = [
       },
     ],
     "98ayer-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    KyranMcCannPhoto,
+    "kyran-mccann-about-page-grow-key",
+    "Kyran McCann",
+    "Chief Marketing Officer",
+    "Auto technician. Coach. Vice President. Co-Founder. Just a few titles I have to my name. I went to school for and work as an auto technician but I want something more with life. I co-founded Wolfpack Football and I'm currently its Vice President. I love working in the community and giving back as I believe it helps my karma. I was content with all that until Ryan and others came to me with this idea and now we're living it. Hope you enjoy our shows!",
+    [
+      {
+        txt: "Instagram",
+        link: "",
+        key: "kyran-mccann-about-instagram-link-key",
+      },
+    ],
+    "kyran-mccann-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
