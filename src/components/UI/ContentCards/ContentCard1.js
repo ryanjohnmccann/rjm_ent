@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "left",
     maxWidth: "430px",
+    [theme.breakpoints.up(768)]: {
+      height: "325px",
+    },
   },
   link: {
     textDecoration: "none",
@@ -35,7 +38,7 @@ export default function ContentCard1(props) {
   }
   return (
     <Link to={url} target="_blank" className={classes.link}>
-      <Card className={classes.root}>
+      <Card className={classes.root} style={{ backgroundColor: "#EEEEEE" }}>
         <CardActionArea>
           <CardMedia
             component="img"

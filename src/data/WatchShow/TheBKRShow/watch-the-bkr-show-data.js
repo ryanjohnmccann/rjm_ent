@@ -4,7 +4,7 @@ const watchShowData = [
     url: "https://www.youtube.com/watch?v=tFXPc83Fikc&t=4s",
     mainTitle: "The BKR Show S00E00 - Pilot",
     details:
-      "Join us for the beginning of whatever the heck we just created. Don't get offended.",
+      "Join us for the beginning of whatever the heck we just created.",
     date: "November 16, 2020",
   },
 ];

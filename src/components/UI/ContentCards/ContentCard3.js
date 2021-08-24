@@ -43,7 +43,7 @@ export default function ContentCard3(props) {
 
   return (
     <Card className={classes.root}>
-      <CardContent style={{ backgroundColor: "#F7F7F7" }}>
+      <CardContent style={{ backgroundColor: " " }}>
         <CardMedia>
           <img alt="Random Alt" src={props.img} className={classes.teamImg} />
         </CardMedia>
