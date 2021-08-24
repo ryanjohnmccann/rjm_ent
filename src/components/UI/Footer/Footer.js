@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   instagramIcon: {
-    color: "black",
+    color: "#833AB4",
     "&:hover": {
       transition: "0.3s",
       color: "gray",

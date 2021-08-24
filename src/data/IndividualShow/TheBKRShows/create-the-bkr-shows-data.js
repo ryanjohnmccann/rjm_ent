@@ -41,7 +41,7 @@ const indContentCards = [
       "S00E00 - Pilot",
       "#8c1aff",
       "The BKR Show",
-      "Join us for the beginning of whatever the heck we just created. Don't get offended.",
+      "Join us for the beginning of whatever the heck we just created.",
       "the-bkr-show-episode-pilot-content-key",
       "the-bkr-show-episode-pilot-grid-key",
       "S00E00 - Pilot",

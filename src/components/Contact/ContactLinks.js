@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#1DA1F2",
   },
   instagramIcon: {
+    color: "#833AB4",
     fontSize: "40px",
   },
 }));
