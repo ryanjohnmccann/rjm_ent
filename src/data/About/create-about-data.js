@@ -142,7 +142,7 @@ const aboutContentCards = [
     [
       {
         txt: "Click This",
-        link: "",
+        link: "https://www.pictureofhotdog.com/about",
         key: "jack-flood-about-random-link-key",
       },
     ],
