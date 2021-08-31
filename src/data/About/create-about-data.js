@@ -3,7 +3,8 @@ import RyanMcCannPhoto from "../../assets/About/ryan_mccann.png";
 import OsoPhoto from "../../assets/About/oso.png";
 import KyranMcCannPhoto from "../../assets/About/kyran_mccann.png";
 import PriscilaOliverPhoto from "../../assets/About/priscila_oliver.png"
-import GabbyDugartePhoto from "../../assets/About/gabby_dugarte.png"
+import GabyDugartePhoto from "../../assets/About/gaby_dugarte.png"
+import JackFloodPhoto from "../../assets/About/jack_flood.png"
 
 function createAboutContentCard(
   img,
@@ -117,19 +118,35 @@ const aboutContentCards = [
     "280px"
   ),
   createAboutContentCard(
-    GabbyDugartePhoto,
+    GabyDugartePhoto,
     "gabby-dugarte-about-page-grow-key",
-    "Gabby Dugarte",
+    "Gaby Dugarte",
     "Content Creator",
-    "My name is Gaby and I'm 19 years old. I am a systems and language engineering student. I live in the countryside and I consider myself a fairly active and multifaceted person. I love doing many things that help me grow professionally and nurture me as a human being.",
+    "My name is Gaby and I'm 19 years old. I am a systems engineering student who also has a passion for languages. I live in the countryside and I consider myself a fairly active and multifaceted person. I love doing many things that help me grow professionally and nurture me as a human being.",
     [
       {
         txt: "Instagram",
         link: "https://www.instagram.com/gabydugartep/",
-        key: "gabby-dugarte-about-instagram-link-key",
+        key: "gaby-dugarte-about-instagram-link-key",
       },
     ],
-    "gabby-dugarte-about-page-grid-key",
+    "gaby-dugarte-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    JackFloodPhoto,
+    "jack-flood-about-page-grow-key",
+    "Jack Flood",
+    "Graphic Designer",
+    "Hey I'm Jack (obviously short for \"Jackolantern\") and I'm a recent graduate from UML's Computer Engineering program, as well as an aspiring guitarist, lyricist, and graphic designer. I love creating because I believe that art and music add so much purpose to life, and I was honored when I got the opportunity to design a little spaceman for this website. In my free time, I mostly just write lyrics and daydream about owning a goat farm in the middle of nowhere, so this project was a very nice change of pace.",
+    [
+      {
+        txt: "Click This",
+        link: "",
+        key: "jack-flood-about-random-link-key",
+      },
+    ],
+    "jack-flood-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
