@@ -5,6 +5,7 @@ import KyranMcCannPhoto from "../../assets/About/kyran_mccann.png";
 import PriscilaOliverPhoto from "../../assets/About/priscila_oliver.png"
 import GabyDugartePhoto from "../../assets/About/gaby_dugarte.png"
 import JackFloodPhoto from "../../assets/About/jack_flood.png"
+import OnelyRobleroPhoto from "../../assets/About/onely_roblero.png"
 
 function createAboutContentCard(
   img,
@@ -131,6 +132,22 @@ const aboutContentCards = [
       },
     ],
     "gaby-dugarte-about-page-grid-key",
+    "280px"
+  ),
+  createAboutContentCard(
+    OnelyRobleroPhoto,
+    "onely-roblero-about-page-grow-key",
+    "Onely Roblero",
+    "Content Creator",
+    "Hi, my name is Onely Roblero, I’m a Biotechnology Engineer. Currently, I’m pursuing a master´s degree at UNAM (México). I consider myself passionate about science, and in the future I want to become a scientist and contribute to the search for new drugs to approach the antimicrobial resistance. This project is very important for me because it will allow me to do what I love the most, spread science!",
+    [
+      {
+        txt: "Instagram",
+        link: "https://www.instagram.com/onely_roblero/",
+        key: "only-roblero-about-instagram-link-key",
+      },
+    ],
+    "only-roblero-about-page-grid-key",
     "280px"
   ),
   createAboutContentCard(
