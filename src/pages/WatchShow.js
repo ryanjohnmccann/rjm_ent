@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import ContentCard4 from "../components/UI/ContentCards/ContentCard4";
 import TheBKRWatchShowData from "../data/WatchShow/TheBKRShow/watch-the-bkr-show-data.js"
+import TheMidnightHowlWatchShowData from "../data/WatchShow/TheMidnightHowl/watch-the-midnight-howl-show-data.js"
 import { Fade } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,7 +19,11 @@ export default function WatchShow() {
   var watchShow;
   if (params.watchShowID.startsWith("the-bkr-watch")) {
     watchShow = TheBKRWatchShowData.find((watchShow) => watchShow.id === params.watchShowID);
-  } else {
+  } 
+  else if (params.watchShowID.startsWith("the-midnight")) {
+    watchShow = TheMidnightHowlWatchShowData.find((watchShow) => watchShow.id === params.watchShowID);
+  }
+  else {
     watchShow = null;
   }
   return (
