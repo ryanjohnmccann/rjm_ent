@@ -8,6 +8,7 @@ import IndBlogIntro from "../components/IndividualBlogs/IndBlogIntro.js";
 import IndBlogButtons from "../components/IndividualBlogs/IndBlogButtons.js";
 import IndBlogBody from "../components/IndividualBlogs/IndBlogBody.js";
 import TheCuriousMindIndBlogs from "../data/IndividualBlog/TheCuriousMindIndBlogs/the-curious-mind-individual-blog-data.js";
+import GabyDugarteIndBlogs from "../data/IndividualBlog/GabyDugarteIndBlogs/gaby-dugarte-individual-blog-data.js";
 import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +46,11 @@ export default function IndividualBlog() {
   var blog;
   if (params.blogID.startsWith("the-curious-mind")) {
     blog = TheCuriousMindIndBlogs.find((blog) => blog.id === params.blogID);
-  } else {
+  } 
+  else if (params.blogID.startsWith("gaby-dugarte")) {
+    blog = GabyDugarteIndBlogs.find((blog) => blog.id === params.blogID);
+  }
+  else {
     blog = null;
   }
   return (

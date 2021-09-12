@@ -10,9 +10,9 @@ import manageContentCards from "../../data/Home/create-content-cards-data.js";
 // Handles styling
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
-    height: "690px",
-    overflowY: "auto",
-    overflowX: "hidden",
+    // height: "690px",
+    // overflowY: "auto",
+    // overflowX: "hidden",
   },
   gridItem: {
     paddingBottom: "10px",
