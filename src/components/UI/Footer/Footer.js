@@ -97,7 +97,7 @@ export default function Footer() {
       classes.facebookIcon
     ),
     createIcon(
-      "https://www.instagram.com/rjmcent/",
+      "https://www.instagram.com/",
       "footer-instagram-effect-key",
       <InstagramIcon style={{ fontSize: "50px" }} />,
       "footer-instagram-link-key",

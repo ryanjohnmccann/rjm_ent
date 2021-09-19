@@ -51,7 +51,7 @@ export default function ContactLinks() {
     email: "/contact",
     phone: "/contact",
     twitter: "https://twitter.com/RJMCEnt",
-    instagram: "https://www.instagram.com/rjmcent/",
+    instagram: "https://www.instagram.com/",
   };
   return (
     <Card className={classes.root}>
