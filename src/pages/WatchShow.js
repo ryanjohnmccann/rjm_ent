@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import ContentCard4 from "../components/UI/ContentCards/ContentCard4";
 import TheBKRWatchShowData from "../data/WatchShow/TheBKRShow/watch-the-bkr-show-data.js"
 import TheMidnightHowlWatchShowData from "../data/WatchShow/TheMidnightHowl/watch-the-midnight-howl-show-data.js"
+import TheCuriousMindWatchShowData from "../data/WatchShow/TheCuriousMind/watch-the-curious-mind-show-data.js"
 import { Fade } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -22,6 +23,9 @@ export default function WatchShow() {
   } 
   else if (params.watchShowID.startsWith("the-midnight")) {
     watchShow = TheMidnightHowlWatchShowData.find((watchShow) => watchShow.id === params.watchShowID);
+  }
+  else if (params.watchShowID.startsWith("the-curious")) {
+    watchShow = TheCuriousMindWatchShowData.find((watchShow) => watchShow.id === params.watchShowID);
   }
   else {
     watchShow = null;
