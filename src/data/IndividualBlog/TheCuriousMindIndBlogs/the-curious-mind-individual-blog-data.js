@@ -37,7 +37,7 @@ const individualBlogData = [
     links: ryan.links,
     photo: Blog1,
     photoDetails:
-      "Only people familiar with computer science will understand the photo above. Cheesy, I know.",
+      "",
     blogContent: <TheCuriousMindBlog1 />,
   },
 ];

@@ -8,7 +8,7 @@ export default function IndBlogExpIntro(props) {
       <Grid item>
         <Typography variant="h2">{props.mainTitle}</Typography>
       </Grid>
-      <Grid item>
+      <Grid item style={{ marginLeft: "10px" }}>
         <Typography variant="subtitle1">{props.titleDescription}</Typography>
       </Grid>
     </React.Fragment>

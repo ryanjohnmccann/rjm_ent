@@ -1,7 +1,7 @@
 import Blog1 from "../../assets/IndividualBlogs/TheCuriousMindBlogs/Blog1.jpg";
 import Blog2 from "../../assets/IndividualBlogs/GabyDugarteBlogs/Blog1.jpg"
 // import Show1 from "../../assets/Shows/the-bkr-show.png";
-import Show2 from "../../assets/Shows/the-midnight-howl.jpeg"
+import Show2 from "../../assets/Shows/the-midnight-howl.png"
 import useful_functions from "../../functions/useful_functions.js";
 
 let useful_functions_inst = new useful_functions();
@@ -101,7 +101,7 @@ const contentCards = useful_functions_inst.sort_carousel(
       false
     ),
   ],
-  2
+  6
 );
 
 // Returns content cards based on category (If there is one)

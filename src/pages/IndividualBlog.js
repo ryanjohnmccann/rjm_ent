@@ -46,11 +46,9 @@ export default function IndividualBlog() {
   var blog;
   if (params.blogID.startsWith("the-curious-mind")) {
     blog = TheCuriousMindIndBlogs.find((blog) => blog.id === params.blogID);
-  } 
-  else if (params.blogID.startsWith("gaby-dugarte")) {
+  } else if (params.blogID.startsWith("gaby-dugarte")) {
     blog = GabyDugarteIndBlogs.find((blog) => blog.id === params.blogID);
-  }
-  else {
+  } else {
     blog = null;
   }
   return (
@@ -59,7 +57,7 @@ export default function IndividualBlog() {
         container
         className={classes.root}
         spacing={1}
-        direction="column"
+        direction="row"
         justify="center"
         align="center"
       >
@@ -82,7 +80,9 @@ export default function IndividualBlog() {
             {blog.photoDetails}
           </Typography>
         </Grid>
-        <IndBlogBody blogContent={blog.blogContent} />
+        <Grid item xs={12}>
+          <IndBlogBody blogContent={blog.blogContent} />
+        </Grid>
       </Grid>
     </Fade>
   );

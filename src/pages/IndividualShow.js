@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   introGrid: {
     maxWidth: "98%",
     textAlign: "left",
+    [theme.breakpoints.up("md")]: {
+      marginLeft: "10px",
+    },
   },
 }));
 

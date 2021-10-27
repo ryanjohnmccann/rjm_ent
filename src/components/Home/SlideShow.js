@@ -1,8 +1,9 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core/styles";
-import Image1 from "../../assets/Home/SlideShow/SlideShow1.jpeg";
-import Image2 from "../../assets/Home/SlideShow/SlideShow2.jpeg";
+import Image1 from "../../assets/Home/SlideShow/The Midnight Howl.png";
+import Image2 from "../../assets/Home/SlideShow/The Curious Mind.png";
+import Image3 from "../../assets/Home/SlideShow/The BKR Show.png";
 
 // Handles styling
 const useStyles = makeStyles((theme) => ({
@@ -19,8 +20,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SlideShow() {
   var items = [
-    { image: Image1, link: "/shows/the-bkr-show" },
+    { image: Image1, link: "/home" },
     { image: Image2, link: "/blogs/explore/the-curious-mind" },
+    { image: Image3, link: "/shows/the-bkr-show" },
   ];
 
   return (
